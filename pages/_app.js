@@ -1,7 +1,26 @@
-import '../styles/globals.css'
+import Head from 'next/head';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+import '../styles/styles.css';
 
-export default MyApp
+const App = ({ Component, pageProps }) => (
+  <>
+    <Head>
+      <title>beandip games</title>
+      <meta name="description" content="beandip games" />
+      <link rel="icon" href="/bean.ico" />
+
+      <link
+        rel="preconnect"
+        href="https://fonts.bunny.net"
+        crossOrigin="true"
+      />
+      <link
+        href="https://fonts.bunny.net/css?family=be-vietnam-pro:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|sora:100,200,300,400,500,600,700,800"
+        rel="stylesheet"
+      />
+    </Head>
+    <Component {...pageProps} />
+  </>
+);
+
+export default App;
