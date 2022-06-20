@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  margin-bottom: 1.5rem;
+}
+
+.navtab {
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: solid 1px transparent;
+  margin-bottom: 1px;
+}
+
+.navtab:hover {
+  border-bottom: solid 1px;
+  cursor: pointer;
+}
+
+.active,
+.active:hover {
+  border-bottom: solid 2px black;
+}
