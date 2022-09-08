@@ -44,36 +44,11 @@ export async function getServerSideProps({ query }) {
     props: {
       blogs: [
         {
-          page: 'first',
-          thumbnail: '/thumbnails/thumbnail.png',
-          title: 'First Post',
-          date: 'September 1st, 2022',
-          text: `You think water moves fast? You should see ice. It moves like it has a
-          mind. Like it knows it killed the world once and got a taste for murder...`,
-        },
-        {
-          page: 'first',
-          thumbnail: '/thumbnails/thumbnail.png',
-          title: 'First Post',
-          date: 'September 1st, 2022',
-          text: `You think water moves fast? You should see ice. It moves like it has a
-          mind. Like it knows it killed the world once and got a taste for murder...`,
-        },
-        {
-          page: 'first',
-          thumbnail: '/thumbnails/thumbnail.png',
-          title: 'First Post',
-          date: 'September 1st, 2022',
-          text: `You think water moves fast? You should see ice. It moves like it has a
-          mind. Like it knows it killed the world once and got a taste for murder...`,
-        },
-        {
-          page: 'first',
-          thumbnail: '/thumbnails/thumbnail.png',
-          title: 'First Post',
-          date: 'September 1st, 2022',
-          text: `You think water moves fast? You should see ice. It moves like it has a
-          mind. Like it knows it killed the world once and got a taste for murder...`,
+          page: 'game-on',
+          thumbnail: '/thumbnails/game-on.png',
+          title: 'Game On',
+          date: 'September 7th, 2022',
+          text: `Welcome to beandip games! Here's the first of many entires in our development blog.`,
         },
       ],
     },

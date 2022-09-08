@@ -18,6 +18,8 @@ const BlogPost = ({ title, date, content }) => (
       <p className={styles.date}>{date}</p>
 
       {content}
+
+      <div className={styles.footer} />
     </main>
   </div>
 );

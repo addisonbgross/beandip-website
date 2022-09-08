@@ -44,11 +44,11 @@ h3 {
 }
 
 .background {
-  background-color: #cfc;
-  background-image: url('/images/bg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #bbfce0;
+  /* background-image: url('/images/bg.png'); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
 }
 
 .main {
@@ -75,4 +75,9 @@ h3 {
 }
 .link:active:hover {
   border-bottom: solid 5px;
+}
+
+.blog-image {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }

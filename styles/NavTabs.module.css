@@ -17,7 +17,8 @@
   border-bottom: solid 4px black;
   margin-bottom: 4px;
 }
-.active:hover {
+.active:hover,
+.active:active:hover {
   border-bottom: solid 4px;
   margin-bottom: 4px;
 }
