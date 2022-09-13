@@ -9,13 +9,6 @@
   flex-wrap: wrap;
 }
 
-.placeholderImage {
-  background-color: #aaf;
-  height: 256px;
-  width: 256px;
-  margin-bottom: 8px;
-}
-
 .descriptionContainer {
   text-align: center;
   margin-top: 8px;
@@ -23,4 +16,8 @@
 }
 .descriptionContainer > p {
   margin: 0px;
+}
+
+.name {
+  font-weight: 800;
 }
