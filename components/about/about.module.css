@@ -1,0 +1,28 @@
+.summary {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.employees {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+@media (max-width: 750px) {
+  .employees {
+    flex-wrap: wrap;
+  }
+}
+
+.descriptionContainer {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.descriptionContainer > p {
+  margin: 0px;
+}
+
+.name {
+  font-weight: 800;
+}

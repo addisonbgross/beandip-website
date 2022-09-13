@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import About from '../components/about/about';
 import BlogSample from '../components/blog-sample/blog-sample';
+import Container from '../components/container/container';
 import NavTabs from '../components/nav-tabs/nav-tabs';
 
 import { TABS } from '../constants.js';
@@ -14,27 +15,29 @@ const Index = ({ blogs }) => {
   const handleOnChangeTab = (tab) => setCurrentTab(tab);
 
   return (
-    <div className="background">
-      <main className="main">
-        <div className={styles.header}>
-          <h1 className={styles.title}>beandip</h1>
-          <Image
-            src="/images/logo.png"
-            width="64"
-            height="64"
-            layout="intrinsic"
-            alt="beandip logo"
-          />
-        </div>
+    <Container>
+      <div className={styles.header}>
+        <>
+          <div className={styles.logo}>
+            <Image
+              src="/images/logo.svg"
+              width="48"
+              height="48"
+              layout="fixed"
+              alt="beandip logo"
+            />
+          </div>
+          <h1 className={styles.title}>beandip games</h1>
+        </>
 
         <NavTabs tab={currentTab} onChange={handleOnChangeTab} />
+      </div>
 
-        {currentTab === TABS.Blog &&
-          blogs.map((b) => <BlogSample key={b.page} {...b} />)}
+      {currentTab === TABS.Blog &&
+        blogs.map((b) => <BlogSample key={b.page} {...b} />)}
 
-        {currentTab === TABS.About && <About />}
-      </main>
-    </div>
+      {currentTab === TABS.About && <About />}
+    </Container>
   );
 };
 

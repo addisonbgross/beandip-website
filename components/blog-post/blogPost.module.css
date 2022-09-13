@@ -1,0 +1,27 @@
+.back {
+  width: 64px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.back:hover {
+  border-bottom: solid 2px;
+  margin-bottom: 14px;
+}
+.back:active:hover {
+  border-bottom: solid 5px;
+  margin-bottom: 11px;
+}
+
+.backArrow {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.date {
+  font-style: italic;
+  margin: 0;
+}
+
+.footer {
+  margin-bottom: 24px;
+}

@@ -1,8 +1,19 @@
 .title {
-  margin: 32px 0;
+  margin: 0;
+  margin-right: 32px;
+  padding-top: 5px;
+  white-space: nowrap;
 }
 
 .header {
   display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   align-items: center;
+  margin: 32px 0;
+}
+
+.logo {
+  margin-right: 4px;
+  padding-top: 8px;
 }

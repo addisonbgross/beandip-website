@@ -7,7 +7,7 @@ const App = ({ Component, pageProps }) => (
     <Head>
       <title>beandip games</title>
       <meta name="description" content="beandip games" />
-      <link rel="icon" href="/bean.ico" />
+      <link rel="icon" href="/icon.png" />
 
       <link
         rel="preconnect"

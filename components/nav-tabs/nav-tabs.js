@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 
 import { TABS } from '../../constants.js';
-import styles from '../../styles/NavTabs.module.css';
+import styles from './navTabs.module.css';
 
 const NavTabs = ({ tab, onChange }) => {
   const blogClasses = clsx(styles.navtab, 'link', {

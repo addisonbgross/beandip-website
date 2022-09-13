@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import styles from '../../styles/BlogSample.module.css';
+import styles from './blogSample.module.css';
 
 const BlogSample = ({ page, thumbnail, thumbnailBlur, title, date, text }) => (
   <Link href={`/blog/${page}`} passHref>
