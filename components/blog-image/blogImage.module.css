@@ -1,5 +1,7 @@
 .blogImage {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  width: 100%;
   margin: 0 auto;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
 }

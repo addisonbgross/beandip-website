@@ -47,6 +47,15 @@ export async function getServerSideProps({ query }) {
     props: {
       blogs: [
         {
+          page: 'prestige-worldwide',
+          thumbnail: '/thumbnails/prestige-worldwide.png',
+          thumbnailBlur:
+            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCACJAIkDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDqzUb1KaiesCStJVOWrslU5aTGUZqpSdavTVSkFYTWhaIh1qxFUIHNTxilBDZbiq1HVaMVajFdCIZMtOpq0/FMQxqgkqdqhegCnLVKar0oqlMKmQ0UXplSOOaZisEUehGonqY1E9dJmVpKpy1dkqnKKBlGUVUcVclFVXFZtFIhA5qxGKiA5qeMURQNliMVaQVBGKsoK0RJKop2KFFOxTERsKhcVYYVC4oApSiqcoq/KKpSik0MoyLzUe2rDimbaxcCrndmo3qU1G9dBmVpKqS1ckqnLSGUpRVVxVuWqzipaGRgVPGKiAqeMUJAWIxVlBUEYqygqhEqinYoUU7FMRGwqFxVhhULigCnKKpyir0gqpIKBlNxTNtTOKZilYZ2pqN6eajeqJIJKqS1akqrLSApy1WarMlVmoGIOtTR1CKnjoEWY6spVeOrKUwJlp1NWn0AMaoXqZqhegCtJVSQVbkqrJTGVWFNxT2ptAHXk1GxpxNRsaQiGQ1UlNWZDVSU0AVpDVdqmkNV2NACipo6rg1PGaALcdWUNVYzVhDQIsKafUamnZpgDVC9SMahc0AQSVUkqzIaqyGmMgam0rGm5oGdWTUbGgtUbNSERyGqkpqeRqqytQBXkNV2NSSNVdmoGPBqeM1UVqnjakIvRmrKGqUbVZRqYi0pp2ahVqfuoAVjUTmnM1Qu1AEUhqpIankaqsjUxkTGm5prNTd1MDqS1Rs1IWpjNUjGSNVSVqmkaqkrUAQyNVZmqSVqqu1IZKrc1YjaqKvzViNqBGhG1WUaqMbVZRqCS2rU7dUCtTt1MB7NUTtSs1Qu1AEcjVUkappGqpK1MCN2pu6o3emb6YzrC1Rs1BNMY1AyORqqStU8hqpKaBlaVqqO/NTTNVKRualsqxMr81Zias9G5q3C1JMlo0Y2qyjVRiNWkNWQWlan7qhU07NADmaoXanMahc0wIpGqnK1TytVKZqYEMj1H5lRTPzUO/3piud0aYxp5qN6g0IJDVOU1bkqpLQNFGY1QkPNXp+9UJetQ9y0CHmrkJqjH1q7DSe5Mi/EatIaqRVaSrM2TqadmmrTqZIhNQualNQvQBVlNUZz1q9LVCeqGZ0zcmodxqSaoaaKitD/2Q==',
+          title: 'Prestige Worldwide',
+          date: 'September 14th, 2022',
+          text: `It can be tricky to consicely explain a game concept you have in your head. Read about how we're working too improve how we explain our premise and gameplay.`,
+        },
+        {
           page: 'game-on',
           thumbnail: '/thumbnails/game-on.png',
           thumbnailBlur:
