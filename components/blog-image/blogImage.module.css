@@ -1,7 +1,9 @@
 .blogImage {
-  width: 100%;
-  margin: 0 auto;
   margin-top: 16px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+.blogImage p {
+  margin: 0 auto;
+  margin-top: 16px;
 }
