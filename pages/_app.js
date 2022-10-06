@@ -30,6 +30,17 @@ const App = ({ Component, pageProps }) => (
         name="twitter:image"
         content="https://beandipgames.com/images/hill-forest.png"
       />
+
+      <meta property="og:title" content="beandip games dev blog" />
+      <meta
+        property="og:image"
+        content="https://beandipgames.com/images/hill-forest.png"
+      />
+      <meta
+        property="og:description"
+        content="Follow beandip games as they create their first game"
+      />
+      <meta property="og:url" content="https://www.beandipgames.com" />
     </Head>
     <Component {...pageProps} />
   </>
