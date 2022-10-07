@@ -41,6 +41,8 @@ const App = ({ Component, pageProps }) => (
         content="Follow beandip games as they create their first game"
       />
       <meta property="og:url" content="https://www.beandipgames.com" />
+
+      <script type="text/javascript" src="/script.js"></script>
     </Head>
     <Component {...pageProps} />
   </>
