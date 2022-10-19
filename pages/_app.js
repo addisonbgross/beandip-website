@@ -42,7 +42,7 @@ const App = ({ Component, pageProps }) => (
       />
       <meta property="og:url" content="https://www.beandipgames.com" />
 
-      <script type="text/javascript" src="/script.js"></script>
+      <script type="text/javascript" src="/script.js" async />
     </Head>
     <Component {...pageProps} />
   </>
