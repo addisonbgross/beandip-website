@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { ThumbnailBlur } from '../../constants.js';
+
 import styles from './blogSample.module.css';
 
-const BlogSample = ({ page, thumbnail, thumbnailBlur, title, date, text }) => (
+const BlogSample = ({ page, thumbnail, title, date, text }) => (
   <Link href={`/blog/${page}`} passHref>
     <div className={styles.wrapper}>
       <div className={styles.thumbnail}>
@@ -11,7 +13,7 @@ const BlogSample = ({ page, thumbnail, thumbnailBlur, title, date, text }) => (
           className={styles.thumbnail}
           src={thumbnail}
           placeholder="blur"
-          blurDataURL={thumbnailBlur}
+          blurDataURL={ThumbnailBlur}
           width="80"
           height="80"
           layout="fixed"

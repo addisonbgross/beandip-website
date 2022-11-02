@@ -1,19 +1,14 @@
 import Image from 'next/image';
 
+import { BlogImageBlur } from '../../constants.js';
+
 import styles from './blogImage.module.css';
 
-const BlogImage = ({
-  image,
-  imageBlur,
-  caption,
-  alt,
-  height = 552,
-  width = 552,
-}) => (
+const BlogImage = ({ image, caption, alt, height = 552, width = 552 }) => (
   <div className={styles.blogImage}>
     <Image
       src={image}
-      blurDataURL={imageBlur}
+      blurDataURL={BlogImageBlur}
       alt={alt}
       objectFit="contain"
       placeholder="blur"
