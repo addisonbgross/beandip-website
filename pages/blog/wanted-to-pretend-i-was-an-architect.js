@@ -260,7 +260,7 @@ export default function BlogPost_IAlwaysWantedToPretendIWasAnArchitect() {
           <p>
             A goal we have had over the past few months is to get a stub
             implementation of every game mechanic we can think of. We still need
-            to work on aspects of story-telling and the game's atmosphere in
+            to work on aspects of story-telling and the game’s atmosphere in
             general, but we’re confident that we’ve tackled the hardest problems
             first… right?
           </p>
