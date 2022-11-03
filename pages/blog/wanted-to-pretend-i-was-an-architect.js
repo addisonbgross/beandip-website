@@ -250,7 +250,7 @@ export default function BlogPost_IAlwaysWantedToPretendIWasAnArchitect() {
           </p>
 
           <p>
-            This is our first game created since we began using Unreal Engine,
+            Since we began using Unreal Engine,
             the architecture of the code and assets has changed quite a few
             times. As we get closer to an MVP version for user testing, we’re
             feeling confident that our game’s design will scale nicely as new
