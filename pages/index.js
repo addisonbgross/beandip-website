@@ -6,7 +6,7 @@ import BlogSample from '../components/blog-sample/blog-sample';
 import Container from '../components/container/container';
 import NavTabs from '../components/nav-tabs/nav-tabs';
 
-import { TABS, ThumbnailBlur } from '../constants.js';
+import { TABS } from '../constants.js';
 import styles from '../styles/Index.module.css';
 
 const Index = ({ blogs }) => {
@@ -45,6 +45,13 @@ export async function getServerSideProps() {
   return {
     props: {
       blogs: [
+        {
+          page: 'what-are-you-doing',
+          thumbnail: '/thumbnails/what-are-you-doing-levels.png',
+          title: 'What are you doing? Levels',
+          date: 'November 16th, 2022',
+          text: `More aspects of the game state can be saved now. Read about the successes and sadness we encountered.`,
+        },
         {
           page: 'wanted-to-pretend-i-was-an-architect',
           thumbnail: '/thumbnails/wanted-to-be-an-architect.png',
