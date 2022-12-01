@@ -24,12 +24,17 @@
 
 .header {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.title {
+  max-width: 480px;
 }
 
 .date {
   font-style: italic;
-  margin: 8px;
+  margin: 3px 8px;
 }
 
 @media (max-width: 750px) {

@@ -46,6 +46,13 @@ export async function getServerSideProps() {
     props: {
       blogs: [
         {
+          page: 'just-mow-a-lawn',
+          thumbnail: '/thumbnails/just-mow-a-lawn.png',
+          title: 'Why Would Anyone Do Drugs When They Could Just Mow A Lawn?',
+          date: 'December 1st, 2022',
+          text: `To create rich environments, we've put together a collection of foliage for our first biome. Check out our techniques for making our plants performant and beautiful.`,
+        },
+        {
           page: 'what-are-you-doing',
           thumbnail: '/thumbnails/what-are-you-doing-levels.png',
           title: 'What are you doing? Levels',
