@@ -46,6 +46,13 @@ export async function getServerSideProps() {
     props: {
       blogs: [
         {
+          page: 'ready-to-work',
+          thumbnail: '/thumbnails/ready-to-work.png',
+          title: 'Ready To Work',
+          date: 'January 11th, 2023',
+          text: `Not much to say aside from Happy New year!`,
+        },
+        {
           page: 'just-mow-a-lawn',
           thumbnail: '/thumbnails/just-mow-a-lawn.png',
           title: 'Why Would Anyone Do Drugs When They Could Just Mow A Lawn?',
