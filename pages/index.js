@@ -5,6 +5,7 @@ import About from '../components/about/about';
 import BlogSample from '../components/blog-sample/blog-sample';
 import Container from '../components/container/container';
 import NavTabs from '../components/nav-tabs/nav-tabs';
+import Social from '../components/social/social';
 
 import { TABS } from '../constants.js';
 import styles from '../styles/Index.module.css';
@@ -30,7 +31,10 @@ const Index = ({ blogs }) => {
           <h1 className={styles.title}>beandip games</h1>
         </>
 
-        <NavTabs tab={currentTab} onChange={handleOnChangeTab} />
+        <div className={styles.tabsSocial}>
+          <NavTabs tab={currentTab} onChange={handleOnChangeTab} />
+          <Social />
+        </div>
       </div>
 
       {currentTab === TABS.Blog &&

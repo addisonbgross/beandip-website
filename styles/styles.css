@@ -58,6 +58,10 @@ strong {
   box-sizing: border-box;
 }
 
+svg path {
+  shape-rendering: geometricPrecision;
+}
+
 .link {
   margin-bottom: 6px;
   cursor: pointer;

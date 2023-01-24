@@ -1,6 +1,5 @@
 .container {
   display: flex;
-  min-width: 300px;
   margin-top: 16px;
 }
 .container > *:not(:first-child) {

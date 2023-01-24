@@ -1,0 +1,10 @@
+.social {
+  padding-top: 12px;
+  margin-left: 32px;
+}
+.social > * {
+  margin-right: 8px !important;
+}
+.social * {
+  cursor: pointer;
+}

@@ -17,3 +17,9 @@
   margin-right: 8px;
   padding-top: 8px;
 }
+
+.tabsSocial {
+  flex-grow: 3;
+  display: flex;
+  justify-content: space-between;
+}
