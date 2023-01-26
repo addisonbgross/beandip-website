@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { ThumbnailBlur } from '../../constants.js';
+import { ImageBlur } from '../../constants.js';
 
 import styles from './blogSample.module.css';
 
@@ -13,7 +13,7 @@ const BlogSample = ({ page, thumbnail, title, date, text }) => (
           className={styles.thumbnail}
           src={thumbnail}
           placeholder="blur"
-          blurDataURL={ThumbnailBlur}
+          blurDataURL={ImageBlur}
           width="80"
           height="80"
           layout="fixed"

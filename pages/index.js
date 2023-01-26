@@ -50,6 +50,13 @@ export async function getServerSideProps() {
     props: {
       blogs: [
         {
+          page: 'my-mind-is-going-a-mile-an-hour-1',
+          thumbnail: '/thumbnails/my-mind-is-going-a-mile-an-hour-1.png',
+          title: 'My Mind Is Going A Mile An Hour (Part 1)',
+          date: 'January 26th, 2023',
+          text: `The first of a two-part post about our AI system. Probably the most challenging aspect of our game to program. It's always a work in progress.`,
+        },
+        {
           page: 'ready-to-work',
           thumbnail: '/thumbnails/ready-to-work.png',
           title: 'Ready To Work',
