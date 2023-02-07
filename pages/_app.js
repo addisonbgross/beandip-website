@@ -4,6 +4,8 @@ import '../styles/styles.css';
 
 const App = ({ Component, pageProps }) => (
   <>
+    <script type="text/javascript" src="/script.js" async />
+
     <Head>
       <title>beandip games</title>
       <meta name="description" content="beandip games" />
@@ -41,8 +43,6 @@ const App = ({ Component, pageProps }) => (
         content="Follow beandip games as they create their first game"
       />
       <meta property="og:url" content="https://www.beandipgames.com" />
-
-      <script type="text/javascript" src="/script.js" async />
     </Head>
     <Component {...pageProps} />
   </>

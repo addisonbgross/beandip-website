@@ -42,17 +42,19 @@ export default function BlogPost_GameOn() {
             Follow us on{' '}
             <Link
               href="https://www.instagram.com/beandipgames/"
-              passHref={true}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <a target="_blank" rel="noopener noreferrer">
-                Instagram
-              </a>
+              Instagram
             </Link>{' '}
             and{' '}
-            <Link href="https://twitter.com/beandipgames/" passHref={true}>
-              <a target="_blank" rel="noopener noreferrer">
-                Twitter
-              </a>
+            <Link
+              href="https://twitter.com/beandipgames/"
+              passHref={true}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
             </Link>{' '}
             for more! Welcome to the party, pal.
           </p>

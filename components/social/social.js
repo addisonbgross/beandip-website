@@ -7,27 +7,28 @@ import styles from './social.module.css';
 
 const Social = () => (
   <div className={styles.social}>
-    <Link href={RedditLink}>
-      <a rel="noopener noreferrer" target="_blank">
-        <Image
-          src="/reddit-logo.svg"
-          width="32"
-          height="32"
-          layout="fixed"
-          alt="beandip games' reddit"
-        />
-      </a>
+    <Link passHref href={RedditLink} rel="noopener noreferrer" target="_blank">
+      <Image
+        src="/reddit-logo.svg"
+        width="32"
+        height="32"
+        layout="fixed"
+        alt="beandip games' reddit"
+      />
     </Link>
-    <Link href={InstagramLink}>
-      <a rel="noopener noreferrer" target="_blank">
-        <Image
-          src="/instagram-logo.svg"
-          width="32"
-          height="32"
-          layout="fixed"
-          alt="beandip games' instagram"
-        />
-      </a>
+    <Link
+      passHref
+      href={InstagramLink}
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <Image
+        src="/instagram-logo.svg"
+        width="32"
+        height="32"
+        layout="fixed"
+        alt="beandip games' instagram"
+      />
     </Link>
   </div>
 );

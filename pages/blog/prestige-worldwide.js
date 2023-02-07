@@ -17,11 +17,10 @@ export default function BlogPost_PrestigeWorldwide() {
             an{' '}
             <Link
               href="https://en.wikipedia.org/wiki/Elevator_pitch"
-              passHref={true}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <a target="_blank" rel="noopener noreferrer">
-                elevator pitch
-              </a>
+              elevator pitch
             </Link>
             . In short, an elevator pitch is a concise explanation of what your
             game is about and why anyone would want to play it.
@@ -59,10 +58,13 @@ export default function BlogPost_PrestigeWorldwide() {
           <p>
             We’re still working on the elevator pitch, but we{' '}
             <strong>have</strong> managed to create a{' '}
-            <Link href="https://en.wikipedia.org/wiki/Log_line" passHref={true}>
-              <a target="_blank" rel="noopener noreferrer">
-                logline:
-              </a>
+            <Link
+              href="https://en.wikipedia.org/wiki/Log_line"
+              passHref={true}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              logline:
             </Link>
           </p>
 

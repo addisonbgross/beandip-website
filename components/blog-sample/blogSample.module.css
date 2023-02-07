@@ -18,7 +18,7 @@
 }
 
 .thumbnail {
-  margin-top: 12px;
+  margin-top: 6px;
   margin-right: 16px;
 }
 
@@ -33,12 +33,21 @@
 }
 
 .title {
-  max-width: 480px;
+  max-width: 450px;
 }
 
 .date {
   font-style: italic;
   margin: 3px 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.text {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0;
+  margin-top: 6px;
 }
 
 @media (max-width: 750px) {

@@ -26,7 +26,7 @@ const BlogSample = ({ page, thumbnail, title, date, text }) => (
           <h3 className={styles.title}>{title}</h3>
           <p className={styles.date}>{date}</p>
         </div>
-        {text}
+        <p className={styles.text}>{text}</p>
       </div>
     </div>
   </Link>

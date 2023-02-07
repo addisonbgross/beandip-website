@@ -9,8 +9,8 @@ import styles from './blogPost.module.css';
 const BlogPost = ({ title, date, content }) => (
   <Container>
     <div className={clsx(styles.back, 'link')}>
-      <Link href={`/`}>
-        <a className={styles.backArrow}>{'<- back'}</a>
+      <Link href={`/`} className={styles.backArrow}>
+        {'<- back'}
       </Link>
     </div>
 

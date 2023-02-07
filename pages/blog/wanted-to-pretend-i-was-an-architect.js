@@ -61,19 +61,20 @@ export default function BlogPost_IAlwaysWantedToPretendIWasAnArchitect() {
           <p>
             Over the course of the game, the player will guide their team of
             adventurers through numerous landscapes and{' '}
-            <Link href="https://en.wikipedia.org/wiki/Biome" passHref={true}>
-              <a target="_blank" rel="noopener noreferrer">
-                biomes
-              </a>
+            <Link
+              href="https://en.wikipedia.org/wiki/Biome"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              biomes
             </Link>{' '}
             . We started building this game before the release of Unreal’s{' '}
             <Link
               href="https://docs.unrealengine.com/5.0/en-US/world-composition-in-unreal-engine/"
-              passHref={true}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <a target="_blank" rel="noopener noreferrer">
-                World Composition
-              </a>
+              World Composition
             </Link>{' '}
             tools, so we’ve opted to not use this feature and will be using
             streaming volumes to load and unload game content instead.
@@ -250,11 +251,10 @@ export default function BlogPost_IAlwaysWantedToPretendIWasAnArchitect() {
           </p>
 
           <p>
-            Since we began using Unreal Engine,
-            the architecture of the code and assets has changed quite a few
-            times. As we get closer to an MVP version for user testing, we’re
-            feeling confident that our game’s design will scale nicely as new
-            features are added to Unreal.
+            Since we began using Unreal Engine, the architecture of the code and
+            assets has changed quite a few times. As we get closer to an MVP
+            version for user testing, we’re feeling confident that our game’s
+            design will scale nicely as new features are added to Unreal.
           </p>
 
           <p>

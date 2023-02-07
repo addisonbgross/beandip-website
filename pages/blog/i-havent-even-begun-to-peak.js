@@ -14,11 +14,10 @@ export default function BlogPost_BonesAreTheirMoney() {
             We’ve been busy preparing our{' '}
             <Link
               href="https://www.unrealengine.com/en-US/megagrants"
-              passHref={true}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <a target="_blank" rel="noopener noreferrer">
-                Epic Games Megagrant
-              </a>
+              Epic Games Megagrant
             </Link>{' '}
             application, so this post will be a brief recap of some new features
             that we’ve been working on over the last two weeks.

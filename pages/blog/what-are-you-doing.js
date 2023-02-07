@@ -13,11 +13,13 @@ export default function BlogPost_IAlwaysWantedToPretendIWasAnArchitect() {
           <p>
             We’ve been working on improving how we save the state of the game.
             We previously wrote{' '}
-            <Link href="/blog/once-you-unplug-the-machine" passHref={true}>
-              <a target="_blank" rel="noopener noreferrer">
-                about how we save the state of the player’s characters and
-                caravan.
-              </a>
+            <Link
+              href="/blog/once-you-unplug-the-machine"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              about how we save the state of the player’s characters and
+              caravan.
             </Link>{' '}
             In our latest update we’re now saving the state of the entire level,
             including trees chopped down, minerals extracted, berries harvested,
