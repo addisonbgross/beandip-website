@@ -35,7 +35,7 @@ export default function BlogPost_GameOn() {
           <BlogImage
             image="/images/hill-run.png"
             alt="an archer runs along a ridge"
-            height="400"
+            height="550"
           />
 
           <p>

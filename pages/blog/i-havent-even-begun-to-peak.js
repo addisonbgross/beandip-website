@@ -42,7 +42,6 @@ export default function BlogPost_BonesAreTheirMoney() {
             image="/images/fire-DOT.gif"
             caption="Somewhat on fire: lingering burn damage after being hit by a grenade"
             alt="The Archer experiencing being lit on fire"
-            height="300"
           />
 
           <h4>Skill Trees</h4>
@@ -61,14 +60,14 @@ export default function BlogPost_BonesAreTheirMoney() {
             image="/images/blaster-skilltree.png"
             caption="Preliminary skill tree for the Blaster character"
             alt="The Blaster's skill tree"
-            height="500"
+            width="350"
           />
 
           <BlogImage
             image="/images/cadet-skilltree.png"
             caption="Preliminary skill tree for the Cadet character"
             alt="The Cadet's skill tree"
-            height="500"
+            width="350"
           />
 
           <h4>Weapon Types</h4>

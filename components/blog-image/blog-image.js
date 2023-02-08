@@ -14,7 +14,7 @@ const BlogImage = ({ image, caption, alt, height = 552, width = 552 }) => (
       placeholder="blur"
       width={width}
       height={height}
-      layout="responsive"
+      style={{ margin: '0 auto' }}
     />
     <p>
       <i>{caption}</i>
