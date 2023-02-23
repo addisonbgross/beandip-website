@@ -50,6 +50,13 @@ export async function getServerSideProps() {
     props: {
       blogs: [
         {
+          page: 'airing-of-grievances',
+          thumbnail: '/thumbnails/airing-of-grievances.png',
+          title: 'Airing Of Grievances',
+          date: 'February 23rd, 2023',
+          text: `Join us in reliving some frustrating yet educational implementation and performance challenges.`,
+        },
+        {
           page: 'my-mind-is-going-a-mile-an-hour-2',
           thumbnail: '/thumbnails/my-mind-is-going-a-mile-an-hour-2.png',
           title: 'My Mind Is Going A Mile An Hour (Part 2)',
