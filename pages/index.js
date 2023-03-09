@@ -50,6 +50,13 @@ export async function getServerSideProps() {
     props: {
       blogs: [
         {
+          page: 'cats-do-not-abide-by-the-laws-of-nature',
+          thumbnail: '/thumbnails/cats-do-not-abide-by-the-laws-of-nature.png',
+          title: 'Cats Do Not Abide By The Laws Of Nature',
+          date: 'March 9th, 2023',
+          text: `Check out the chaotic and satisfying fun that physics can add to a game.`,
+        },
+        {
           page: 'airing-of-grievances',
           thumbnail: '/thumbnails/airing-of-grievances.png',
           title: 'Airing Of Grievances',
