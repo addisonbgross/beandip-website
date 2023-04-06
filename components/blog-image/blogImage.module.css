@@ -6,4 +6,8 @@
 .blogImage p {
   margin: 0 auto;
   margin-top: 16px;
+  text-align: center;
+}
+.blogImage img {
+  display: inline;
 }

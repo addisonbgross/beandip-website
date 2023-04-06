@@ -50,6 +50,13 @@ export async function getServerSideProps() {
     props: {
       blogs: [
         {
+          page: 'unlimited-juice',
+          thumbnail: '/thumbnails/unlimited-juice.png',
+          title: 'There’s unlimited juice? This party is gonna be off the hook',
+          date: 'April 5th, 2023',
+          text: `No RPG would be complete without a skill tree. This post discusses our use and implementation of a skill system.`,
+        },
+        {
           page: 'cats-do-not-abide-by-the-laws-of-nature',
           thumbnail: '/thumbnails/cats-do-not-abide-by-the-laws-of-nature.png',
           title: 'Cats Do Not Abide By The Laws Of Nature',

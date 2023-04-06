@@ -10,13 +10,12 @@ const BlogImage = ({ image, caption, alt, height = 552, width = 552 }) => (
       src={image}
       blurDataURL={ImageBlur}
       alt={alt}
-      objectFit="contain"
       placeholder="blur"
       width={width}
       height={height}
       style={{ margin: '0 auto' }}
     />
-    <p>
+    <p style={{ width: '500px' }}>
       <i>{caption}</i>
     </p>
   </div>
