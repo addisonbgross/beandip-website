@@ -50,6 +50,13 @@ export async function getServerSideProps() {
     props: {
       blogs: [
         {
+          page: 'im-worried',
+          thumbnail: '/thumbnails/im-worried.png',
+          title: 'I’m worried the baby thinks people can’t change',
+          date: 'April 19th, 2023',
+          text: `A quick recap of what we've done in the last eight months since starting.`,
+        },
+        {
           page: 'unlimited-juice',
           thumbnail: '/thumbnails/unlimited-juice.png',
           title: 'There’s unlimited juice? This party is gonna be off the hook',
