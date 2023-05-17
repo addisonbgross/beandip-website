@@ -43,6 +43,10 @@ h2 {
 h3 {
   margin: 4px 0;
   font-size: 16px;
+
+  /* the only way to get rid of the black underline for some reason */
+  text-decoration-color: white;
+  text-decoration-line: underline;
 }
 
 h4 {

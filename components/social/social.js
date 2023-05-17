@@ -12,7 +12,6 @@ const Social = () => (
         src="/reddit-logo.svg"
         width="32"
         height="32"
-        layout="fixed"
         alt="beandip games' reddit"
       />
     </Link>
@@ -26,7 +25,6 @@ const Social = () => (
         src="/instagram-logo.svg"
         width="32"
         height="32"
-        layout="fixed"
         alt="beandip games' instagram"
       />
     </Link>

@@ -39,8 +39,11 @@
 .date {
   font-style: italic;
   margin: 3px 8px;
-  text-decoration: none;
   display: inline-block;
+
+  /* the only way to get rid of the black underline for some reason */
+  text-decoration-color: white;
+  text-decoration-line: underline;
 }
 
 .text {

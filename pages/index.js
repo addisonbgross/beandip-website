@@ -24,7 +24,6 @@ const Index = ({ blogs }) => {
               src="/images/logo.svg"
               width="48"
               height="48"
-              layout="fixed"
               alt="beandip logo"
             />
           </div>
@@ -49,6 +48,14 @@ export async function getServerSideProps() {
   return {
     props: {
       blogs: [
+        {
+          page: 'someone-could-fit-through-that-window',
+          thumbnail: '/thumbnails/someone-could-fit.png',
+          title:
+            'Someone could fit through that window. A small person. An attack child',
+          date: 'May 17th, 2023',
+          text: `Read about how we created an underground mine environment without crying.`,
+        },
         {
           page: 'im-worried',
           thumbnail: '/thumbnails/im-worried.png',

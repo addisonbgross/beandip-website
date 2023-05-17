@@ -16,7 +16,6 @@ const BlogSample = ({ page, thumbnail, title, date, text }) => (
           blurDataURL={ImageBlur}
           width="80"
           height="80"
-          layout="fixed"
           alt={title}
         />
       </div>
