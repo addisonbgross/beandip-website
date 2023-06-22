@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { RedditLink, InstagramLink } from '../../constants.js';
+import { RedditLink, InstagramLink } from '../../constants.ts';
 
 import styles from './social.module.css';
 
-const Social = () => (
+const Social: React.FC = (): React.ReactElement => (
   <div className={styles.social}>
     <Link passHref href={RedditLink} rel="noopener noreferrer" target="_blank">
       <Image

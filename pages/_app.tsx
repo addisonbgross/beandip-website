@@ -14,7 +14,7 @@ const App = ({ Component, pageProps }) => (
       <link
         rel="preconnect"
         href="https://fonts.bunny.net"
-        crossOrigin="true"
+        crossOrigin="anonymous"
       />
 
       <link

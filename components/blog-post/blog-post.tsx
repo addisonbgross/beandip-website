@@ -6,7 +6,9 @@ import Container from '../container/container';
 
 import styles from './blogPost.module.css';
 
-const BlogPost = ({ title, date, content }) => (
+const BlogPost: React.FC<{ title: string, date: string, content: any }> = ({
+  title, date, content
+}): React.ReactElement => (
   <Container>
     <div className={clsx(styles.back, 'link')}>
       <Link href={`/`} className={styles.backArrow}>

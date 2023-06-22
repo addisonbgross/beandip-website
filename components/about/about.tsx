@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import styles from './about.module.css';
 
-const About = () => (
+const About = (): React.ReactElement => (
   <div>
     <p className={styles.summary}>
       <strong>beandip games</strong> is a Canadian indie game studio currently

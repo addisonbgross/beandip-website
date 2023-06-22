@@ -1,10 +1,12 @@
 import Image from 'next/image';
 
-import { ImageBlur } from '../../constants.js';
+import { ImageBlur } from '../../constants.ts';
 
 import styles from './blogImage.module.css';
 
-const BlogImage = ({ image, caption, alt, height = 552, width = 552 }) => (
+const BlogImage: React.FC<{ image: string, caption: string, alt: string, height: number, width: number }> = ({
+  image, caption, alt, height = 552, width = 552
+}): React.ReactElement => (
   <div className={styles.blogImage}>
     <Image
       src={image}

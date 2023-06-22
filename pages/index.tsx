@@ -8,11 +8,11 @@ import Container from '../components/container/container';
 import NavTabs from '../components/nav-tabs/nav-tabs';
 import Social from '../components/social/social';
 
-import { TABS } from '../constants.js';
+import { Tabs } from '../constants.ts';
 import styles from '../styles/Index.module.css';
 
 const Index = ({ blogs }) => {
-  const [currentTab, setCurrentTab] = useState(TABS.Blog);
+  const [currentTab, setCurrentTab] = useState(Tabs.Blog);
 
   const handleOnChangeTab = (tab) => setCurrentTab(tab);
 
@@ -37,10 +37,10 @@ const Index = ({ blogs }) => {
         </div>
       </div>
 
-      {currentTab === TABS.Blog &&
+      {currentTab === Tabs.Blog &&
         blogs.map((b) => <BlogSample key={b.page} {...b} />)}
 
-      {currentTab === TABS.About && <About />}
+      {currentTab === Tabs.About && <About />}
     </Container>
   );
 };

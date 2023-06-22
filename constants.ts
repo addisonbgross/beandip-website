@@ -1,7 +1,7 @@
-export const TABS = {
-  Blog: 0,
-  About: 1,
-};
+export enum Tabs {
+  Blog,
+  About
+}
 
 export const RedditLink = 'https://www.reddit.com/user/beandipgames';
 export const InstagramLink = 'https://www.instagram.com/beandipgames/';

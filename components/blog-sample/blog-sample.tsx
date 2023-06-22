@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { ImageBlur } from '../../constants.js';
+import { ImageBlur } from '../../constants.ts';
 
 import styles from './blogSample.module.css';
 
-const BlogSample = ({ page, thumbnail, title, date, text }) => (
+const BlogSample: React.FC<{ page: string, thumbnail: string, title: string, date: string, text: string }> = ({
+  page, thumbnail, title, date, text
+}): React.ReactElement => (
   <Link href={`/blog/${page}`} passHref>
     <div className={styles.wrapper}>
       <div className={styles.thumbnail}>
