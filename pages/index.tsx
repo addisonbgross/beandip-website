@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { GetServerSideProps } from 'next';
 import Image from 'next/image';
 
 import About from '../components/about/about';
@@ -44,7 +45,7 @@ const Index = ({ blogs }) => {
   );
 };
 
-export async function getServerSideProps() {
+export const getServerSideProps: GetServerSideProps = async () => {
   return {
     props: {
       blogs: [
