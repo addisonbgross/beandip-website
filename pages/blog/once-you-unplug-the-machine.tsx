@@ -37,7 +37,7 @@ export default function BlogPost_BonesAreTheirMoney() {
             image="/images/cadet-aura.gif"
             caption="Learning an aura skill"
             alt="The Cadet learns an aura type skill"
-            height="300"
+            height={300}
           />
 
           <p>
@@ -162,7 +162,7 @@ export default function BlogPost_BonesAreTheirMoney() {
           <BlogImage
             image="/images/costanza-frogger.gif"
             alt="George Costanza fails at IRL Frogger"
-            height="300"
+            height={300}
           />
         </>
       }

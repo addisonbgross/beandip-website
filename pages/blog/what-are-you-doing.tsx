@@ -49,7 +49,7 @@ export default function BlogPost_IAlwaysWantedToPretendIWasAnArchitect() {
             image="/images/level-streaming.png"
             caption="Loading responsibilities for primary and sub-levels"
             alt="A primary level enclosing sub-levels"
-            height="250"
+            height={250}
           />
 
           <h4>Saving</h4>
@@ -74,7 +74,7 @@ export default function BlogPost_IAlwaysWantedToPretendIWasAnArchitect() {
             image="/images/lots-o-wood.png"
             caption="An abundance of logs"
             alt="A large pile of logs from felled trees"
-            height="375"
+            height={375}
           />
 
           <h4>Sadness</h4>
@@ -97,7 +97,7 @@ export default function BlogPost_IAlwaysWantedToPretendIWasAnArchitect() {
           <BlogImage
             image="/images/levels.gif"
             alt="Jerry wants to see the levels"
-            height="300"
+            height={400}
           />
         </>
       }

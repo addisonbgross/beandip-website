@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import BlogPost from '../../components/blog-post/blog-post';
 import BlogImage from '../../components/blog-image/blog-image';
 
@@ -92,7 +90,7 @@ export default function BlogPost_MyMindIsGoingAMileAnHourPart1() {
             image="/images/attack-event.gif"
             alt="Bandits running into combat"
             caption="A couple of bandits trying to enjoy a campfire until a pesky combat event occurs"
-            height="400"
+            height={400}
           />
 
           <h4>Jobs</h4>
@@ -149,7 +147,7 @@ export default function BlogPost_MyMindIsGoingAMileAnHourPart1() {
             image="/images/gathering-wood.gif"
             alt="The survivors gathering chopped wood"
             caption="The harvest wood job set in action. Currently not optimized to select the closest wood piece :)"
-            height="400"
+            height={400}
           />
 
           <p>

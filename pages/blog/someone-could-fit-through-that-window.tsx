@@ -34,8 +34,8 @@ export default function BlogPost_SomeoneCouldFitThroughThatWindow() {
             image="/images/upslope-mines-exterior.png"
             alt="The outside view of the underground mines"
             caption="Outside view of the mines"
-            height="400"
-            width="600"
+            height={400}
+            width={600}
           />
 
           <p>The main challenges of creating the mines were:</p>
@@ -86,8 +86,8 @@ export default function BlogPost_SomeoneCouldFitThroughThatWindow() {
             image="/images/entering-mines.gif"
             alt="The roof of the mines disappears when a player unit enters"
             caption="Entering the mines"
-            height="600"
-            width="600"
+            height={600}
+            width={600}
           />
 
           <p>
@@ -106,8 +106,8 @@ export default function BlogPost_SomeoneCouldFitThroughThatWindow() {
             image="/images/exploring-mines.gif"
             alt="The player units battling bandits in a dimly lit mine"
             caption="Fighting in the dark"
-            height="500"
-            width="600"
+            height={500}
+            width={600}
           />
 
           <p>

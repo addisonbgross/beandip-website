@@ -71,16 +71,16 @@ export default function BlogPost_AiringOfGrievances() {
             image="/images/convex-movement.png"
             alt="Convex movement with a functional effort distance"
             caption="Convex movement with a functional effort distance"
-            height="400"
-            width="300"
+            height={400}
+            width={300}
           />
 
           <BlogImage
             image="/images/concave-movement.png"
             alt="Concave movement with an incorrect effort distance"
             caption="Concave movement with an incorrect effort distance"
-            height="400"
-            width="300"
+            height={400}
+            width={300}
           />
 
           <p>
@@ -227,8 +227,8 @@ export default function BlogPost_AiringOfGrievances() {
             image="/images/resource-queue.png"
             alt="The resource queue, currently processing wood"
             caption="The resource queue, currently processing wood"
-            height="400"
-            width="150"
+            height={400}
+            width={150}
           />
 
           <p>
@@ -279,7 +279,7 @@ export default function BlogPost_AiringOfGrievances() {
             image="/images/fire-bomb.gif"
             alt="The Niagara effect used for the Blaster’s Fire Bomb skill"
             caption="The Niagara effect used for the Blaster’s Fire Bomb skill"
-            height="400"
+            height={400}
           />
 
           <p>

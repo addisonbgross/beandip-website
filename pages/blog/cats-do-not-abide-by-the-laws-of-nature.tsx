@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import BlogPost from '../../components/blog-post/blog-post';
 import BlogImage from '../../components/blog-image/blog-image';
 
@@ -40,8 +38,8 @@ export default function BlogPost_CatsDoNotAbideByTheLawsOfNature() {
             image="/images/log-choppings.gif"
             alt="Felled trees exploding into carryable log resources"
             caption="Popping logs in action"
-            height="500"
-            width="600"
+            height={500}
+            width={600}
           />
 
           <p>
@@ -78,8 +76,8 @@ export default function BlogPost_CatsDoNotAbideByTheLawsOfNature() {
             image="/images/ragdoll-physics.gif"
             alt="Ragdoll using the physics primitives composing the skeletal mesh"
             caption="Ragdoll using the physics primitives composing the skeletal mesh"
-            height="500"
-            width="600"
+            height={500}
+            width={600}
           />
 
           <p>
@@ -116,8 +114,8 @@ export default function BlogPost_CatsDoNotAbideByTheLawsOfNature() {
             image="/images/chest-kick.gif"
             alt="The Cadet sends the Archer flying with a swift kick to the chest"
             caption="Archer begone!"
-            height="500"
-            width="600"
+            height={500}
+            width={600}
           />
 
           <p>

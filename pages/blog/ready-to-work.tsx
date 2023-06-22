@@ -25,7 +25,7 @@ export default function BlogPost_ReadyToWork() {
           <BlogImage
             image="/images/watching.gif"
             alt="The survivors looking over their ruined home"
-            height="450"
+            height={450}
           />
         </>
       }

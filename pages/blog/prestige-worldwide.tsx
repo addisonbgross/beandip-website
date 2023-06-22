@@ -37,7 +37,7 @@ export default function BlogPost_PrestigeWorldwide() {
           <BlogImage
             image="/images/money-please.png"
             alt="Mona Lisa Saperstien needs money"
-            height="300"
+            height={300}
           />
 
           <p>

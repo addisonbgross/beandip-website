@@ -41,7 +41,7 @@ export default function BlogPost_IAlwaysWantedToPretendIWasAnArchitect() {
             image="/images/selection-area.gif"
             caption="Using the Selection Rectangle"
             alt="The Player using the Selection Rectangle to control their characters"
-            height="300"
+            height={300}
           />
 
           <h4>Caravan</h4>
@@ -107,7 +107,7 @@ export default function BlogPost_IAlwaysWantedToPretendIWasAnArchitect() {
             image="/images/birds-eye-view-of-fields.png"
             caption="A sample level divided into sub-levels"
             alt="A vast level divided into sub-levels"
-            height="300"
+            height={300}
           />
 
           <h4>Characters</h4>
@@ -136,7 +136,7 @@ export default function BlogPost_IAlwaysWantedToPretendIWasAnArchitect() {
             image="/images/attack-vision-ranges.png"
             caption="The outer rings are the vision range and the inner rings are the attack range"
             alt="Three characters showing their vision and attack ranges"
-            height="350"
+            height={350}
           />
 
           <p>
@@ -269,7 +269,7 @@ export default function BlogPost_IAlwaysWantedToPretendIWasAnArchitect() {
             image="/images/rough-architecture.png"
             caption="A high-level architecture diagram"
             alt="A high-level game components architecture diagram"
-            height="500"
+            height={500}
           />
         </>
       }

@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import BlogPost from '../../components/blog-post/blog-post';
 import BlogImage from '../../components/blog-image/blog-image';
 
@@ -49,16 +47,16 @@ export default function BlogPost_UnlimitedJuice() {
             image="/images/archer-skill-use.gif"
             alt="The Archer using the Rapid Shot skill, followed by Trick Shot. All while being pelted by two Blasters"
             caption="The Archer using the Rapid Shot skill, followed by Trick Shot. All while being pelted by two Blasters"
-            height="300"
-            width="400"
+            height={300}
+            width={400}
           />
 
           <BlogImage
             image="/images/archer-skill-cooldown.gif"
             alt="The Archer’s portrait during combat. This shows their health decreasing with each hit, and also the cooldown that begins after each skill is used"
             caption="The Archer’s portrait during combat. This shows their health decreasing with each hit, and also the cooldown that begins after each skill is used"
-            height="200"
-            width="160"
+            height={200}
+            width={160}
           />
 
           <h4>Special Effects</h4>
@@ -85,16 +83,16 @@ export default function BlogPost_UnlimitedJuice() {
             image="/images/action-skill-config.png"
             alt="The FXType field can be set for both the Action Skill itself or the Action Skill Response, which is used when resolving a successful attack"
             caption="The FXType field can be set for both the Action Skill itself or the Action Skill Response, which is used when resolving a successful attack"
-            height="400"
-            width="500"
+            height={400}
+            width={500}
           />
 
           <BlogImage
             image="/images/cadet-using-crush-armor.gif"
             alt="The Cadet’s Crush Armor skill creates a shower of sparks and metal with an effect triggered in the skill’s Action Skill Response"
             caption="The Cadet’s Crush Armor skill creates a shower of sparks and metal with an effect triggered in the skill’s Action Skill Response"
-            height="300"
-            width="400"
+            height={300}
+            width={400}
           />
 
           <h4>Tales of Interest</h4>
@@ -110,16 +108,16 @@ export default function BlogPost_UnlimitedJuice() {
             image="/images/miner-spin-skill.gif"
             alt="The Miner using the Don’t Crowd Me skill"
             caption="The Miner using the Don’t Crowd Me skill"
-            height="300"
-            width="350"
+            height={300}
+            width={350}
           />
 
           <BlogImage
             image="/images/blaster-skill-jamboree.gif"
             alt="The Blaster escaping their attacker using the Twitch skill, but not before using the Tar Bomb skill to slow the pursuing Cadet"
             caption="The Blaster escaping their attacker using the Twitch skill, but not before using the Tar Bomb skill to slow the pursuing Cadet"
-            height="400"
-            width="500"
+            height={400}
+            width={500}
           />
 
           <p>
@@ -133,8 +131,8 @@ export default function BlogPost_UnlimitedJuice() {
             image="/images/miner-three-skills.gif"
             alt="The Miner uses three skills in quick succession. They move toward the Archers quickly due to the Poor Sport skill triggering when they are hit by ranged attacks. The Ground Swell skill hits both Archers in a line, and lastly the Hilt Hit skill stuns the last Archer while they receive a pickaxe to the head"
             caption="The Miner uses three skills in quick succession. They move toward the Archers quickly due to the Poor Sport skill triggering when they are hit by ranged attacks. The Ground Swell skill hits both Archers in a line, and lastly the Hilt Hit skill stuns the last Archer while they receive a pickaxe to the head"
-            height="400"
-            width="500"
+            height={400}
+            width={500}
           />
 
           <h4>Bonus Footage</h4>
@@ -148,43 +146,43 @@ export default function BlogPost_UnlimitedJuice() {
           <BlogImage
             image="/images/ruined-village1.png"
             alt="The Cadet sends the Archer flying with a swift kick to the chest"
-            height="400"
-            width="600"
+            height={400}
+            width={600}
           />
 
           <BlogImage
             image="/images/ruined-village2.png"
             alt="The Cadet sends the Archer flying with a swift kick to the chest"
-            height="400"
-            width="600"
+            height={400}
+            width={600}
           />
 
           <BlogImage
             image="/images/ruined-village3.png"
             alt="The Cadet sends the Archer flying with a swift kick to the chest"
-            height="500"
-            width="600"
+            height={500}
+            width={600}
           />
 
           <BlogImage
             image="/images/ruined-village4.png"
             alt="The Cadet sends the Archer flying with a swift kick to the chest"
-            height="400"
-            width="600"
+            height={400}
+            width={600}
           />
 
           <BlogImage
             image="/images/ruined-village5.png"
             alt="The Cadet sends the Archer flying with a swift kick to the chest"
-            height="400"
-            width="600"
+            height={400}
+            width={600}
           />
 
           <BlogImage
             image="/images/ruined-village6.png"
             alt="The Cadet sends the Archer flying with a swift kick to the chest"
-            height="400"
-            width="600"
+            height={400}
+            width={600}
           />
         </>
       }

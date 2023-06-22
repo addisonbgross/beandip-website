@@ -75,8 +75,8 @@ export default function BlogPost_ImWorried() {
             image="/images/capy-down.gif"
             alt="A capybara-type create lays down for a nap"
             caption="Nap time"
-            height="400"
-            width="600"
+            height={400}
+            width={600}
           />
 
           <h5>Skill trees</h5>
@@ -172,8 +172,8 @@ export default function BlogPost_ImWorried() {
           <BlogImage
             image="/images/technical-bones-view.png"
             alt="Anatomical-style look at the unit's bones"
-            height="600"
-            width="430"
+            height={600}
+            width={430}
           />
 
           <h4>Next steps</h4>
@@ -234,29 +234,29 @@ export default function BlogPost_ImWorried() {
           <BlogImage
             image="/images/whiteboard-sample-1.png"
             alt="Ruined Village"
-            height="400"
-            width="600"
+            height={400}
+            width={600}
           />
 
           <BlogImage
             image="/images/whiteboard-sample-2.png"
             alt="Selected unit menu"
-            height="600"
-            width="600"
+            height={600}
+            width={600}
           />
 
           <BlogImage
             image="/images/whiteboard-sample-3.png"
             alt="Full UI mockup"
-            height="500"
-            width="600"
+            height={500}
+            width={600}
           />
 
           <BlogImage
             image="/images/whiteboard-sample-4.png"
             alt="The Countess"
-            height="500"
-            width="400"
+            height={500}
+            width={400}
           />
         </>
       }

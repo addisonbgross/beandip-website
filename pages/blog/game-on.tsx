@@ -22,7 +22,7 @@ export default function BlogPost_GameOn() {
           <BlogImage
             image="/images/hill-forest.png"
             alt="long shadows on a hill"
-            height="400"
+            height={400}
           />
 
           <p>
@@ -35,7 +35,7 @@ export default function BlogPost_GameOn() {
           <BlogImage
             image="/images/hill-run.png"
             alt="an archer runs along a ridge"
-            height="550"
+            height={550}
           />
 
           <p>

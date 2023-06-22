@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import BlogPost from '../../components/blog-post/blog-post';
 import BlogImage from '../../components/blog-image/blog-image';
 
@@ -50,7 +48,7 @@ export default function BlogPost_GameOn() {
           <BlogImage
             image="/images/trees-in-fog.png"
             alt="A forest fading into distant fog"
-            height="350"
+            height={350}
           />
 
           <h4>Painting The Landscape</h4>
@@ -70,7 +68,7 @@ export default function BlogPost_GameOn() {
             image="/images/painting-foliage.gif"
             alt="Painting foliage using Unreal"
             caption="Bulk painting of foliage"
-            height="400"
+            height={400}
           />
 
           <h4>Performance</h4>
@@ -121,7 +119,7 @@ export default function BlogPost_GameOn() {
             image="/images/lod-in-action.gif"
             alt="A fern plant at 3 different levels of LOD"
             caption="The fern's 3 LOD meshes"
-            height="400"
+            height={400}
           />
 
           <h4>Wind</h4>
@@ -153,7 +151,7 @@ export default function BlogPost_GameOn() {
           <BlogImage
             image="/images/hilltop-foliage.png"
             alt="A hilltop covered in lush foliage"
-            height="350"
+            height={350}
           />
         </>
       }

@@ -41,7 +41,7 @@ export default function BlogPost_BonesAreTheirMoney() {
             image="/images/placeholder-mesh.png"
             caption="The placeholder. Don’t make eye contact"
             alt="A non-production character mesh"
-            height="300"
+            height={300}
           />
 
           <h4>Animations</h4>
@@ -110,7 +110,7 @@ export default function BlogPost_BonesAreTheirMoney() {
             image="/images/movement-blendspace.gif"
             caption="Using the blendspace"
             alt="A character blending between animations"
-            height="210"
+            height={210}
           />
 
           <p>
@@ -134,8 +134,8 @@ export default function BlogPost_BonesAreTheirMoney() {
             image="/images/new-attack-cycle-states.png"
             caption="Updated animation graphs for bow and grenade weapons"
             alt="States depicting the newer draw, ready, attack animations"
-            width="750"
-            height="500"
+            width={750}
+            height={500}
           />
 
           <p>
@@ -161,7 +161,7 @@ export default function BlogPost_BonesAreTheirMoney() {
           <BlogImage
             image="/images/incendiary.gif"
             alt="The Blaster throwing incendiary grenades at an enemy"
-            height="300"
+            height={450}
           />
         </>
       }

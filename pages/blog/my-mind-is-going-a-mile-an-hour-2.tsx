@@ -58,7 +58,7 @@ export default function BlogPost_MyMindIsGoingAMileAnHourPart2() {
             enemies. When a unit needs to use its current state to make a
             decision, the state is generated in that moment. This results in
             extremely fresh knowledge about each unit. There is quite a bit of
-            <strike>convoluted</strike> complex code running in each units’ AI.
+            <s>convoluted</s> complex code running in each units’ AI.
             Surprisingly though, it contributes an absolutely trivial
             computational overhead, so getting this fresh state causes no
             performance cost.
@@ -114,7 +114,7 @@ export default function BlogPost_MyMindIsGoingAMileAnHourPart2() {
             image="/images/click-through.gif"
             alt="Selecting a unit through a tree"
             caption="Selecting a unit through a tree"
-            height="400"
+            height={400}
           />
 
           <h4>Bones In Motion</h4>
@@ -182,38 +182,38 @@ export default function BlogPost_MyMindIsGoingAMileAnHourPart2() {
             image="/images/main-states.png"
             alt="The Main state machine controls all non-interruptive actions"
             caption="The Main state machine controls all non-interruptive actions"
-            height="400"
+            height={400}
           />
 
           <BlogImage
             image="/images/top-states-1.png"
             alt="Urgent States has higher precedence over the Main states"
             caption="Urgent States has higher precedence over the Main states"
-            height="300"
-            width="450"
+            height={300}
+            width={450}
           />
 
           <BlogImage
             image="/images/urgent-states.png"
             alt="Inside Urgent States. Not a lot of them, but they must be shown before other states"
             caption="Inside Urgent States. Not a lot of them, but they must be shown before other states"
-            height="300"
-            width="400"
+            height={300}
+            width={400}
           />
 
           <BlogImage
             image="/images/top-states-2.png"
             alt="Actions Skill States will be applied if no Action Skill is being used"
             caption="Actions Skill States will be applied if an Action Skill with a specific animation is being used"
-            height="200"
-            width="600"
+            height={200}
+            width={600}
           />
 
           <BlogImage
             image="/images/action-skill-states.png"
             alt="Inside Action Skill States. These are unique to each unit type"
             caption="Inside Action Skill States. These are unique to each unit type"
-            height="400"
+            height={400}
           />
         </>
       }
