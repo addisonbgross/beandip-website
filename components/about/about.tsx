@@ -11,6 +11,7 @@ const About = (): React.ReactElement => (
       creation process in a holistic way.
     </p>
 
+{/*
     <div className={styles.employees}>
       <div className={styles.descriptionContainer}>
         <Image
@@ -38,6 +39,7 @@ const About = (): React.ReactElement => (
         <p>Modelling & animation</p>
       </div>
     </div>
+*/}
   </div>
 );
 
