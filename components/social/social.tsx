@@ -3,10 +3,8 @@ import Link from 'next/link';
 
 import { RedditLink, InstagramLink } from '../../constants.ts';
 
-import styles from './social.module.css';
-
 const Social: React.FC = (): React.ReactElement => (
-  <div className={styles.social}>
+  <div className="flex space-x-2">
     <Link passHref href={RedditLink} rel="noopener noreferrer" target="_blank">
       <Image
         src="/reddit-logo.svg"

@@ -9,32 +9,29 @@ import NavTabs from '../components/nav-tabs/nav-tabs';
 import Social from '../components/social/social';
 
 import { Tabs } from '../constants.ts';
-import styles from '../styles/Index.module.css';
 
 const Index = ({ blogs }) => {
   const [currentTab, setCurrentTab] = useState(Tabs.Blog);
 
-  const handleOnChangeTab = (tab) => setCurrentTab(tab);
-
   return (
     <Container>
-      <div className={styles.header}>
-        <>
-          <div className={styles.logo}>
-            <Image
-              src="/images/logo.svg"
-              width="48"
-              height="48"
-              alt="beandip logo"
-            />
-          </div>
-          <h1 className={styles.title}>beandip games</h1>
-        </>
-
-        <div className={styles.tabsSocial}>
-          <NavTabs tab={currentTab} onChange={handleOnChangeTab} />
-          <Social />
+      <div className="flex justify-between items-center mt-6 mb-4 space-x-2">
+        <div className="m-3">
+          <Image
+            src="/images/logo.svg"
+            width="48"
+            height="48"
+            alt="beandip logo"
+          />
         </div>
+
+        <h1 className="whitespace-nowrap m-1">beandip games</h1>
+
+        <div className="flex-1 pl-4">
+          <NavTabs tab={currentTab} onChange={(tab) => setCurrentTab(tab)} />
+        </div>
+
+        <Social />
       </div>
 
       {currentTab === Tabs.Blog &&
