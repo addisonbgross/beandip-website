@@ -3,12 +3,11 @@ import clsx from 'clsx';
 import Link from 'next/link';
 
 import Container from '../container/container';
+import { Post } from '../../types';
 
 import styles from './blogPost.module.css';
 
-const BlogPost: React.FC<{ title: string, date: string, content: any }> = ({
-  title, date, content
-}): React.ReactElement => (
+const BlogPost = (props: Post) => (
   <Container>
     <div className={clsx(styles.back, 'link')}>
       <Link href={`/`} className={styles.backArrow}>
@@ -16,11 +15,11 @@ const BlogPost: React.FC<{ title: string, date: string, content: any }> = ({
       </Link>
     </div>
 
-    <h2>{title}</h2>
+    <h2>{props.title}</h2>
 
-    <p className={styles.date}>{date}</p>
+    <p className={styles.date}>{props.date}</p>
 
-    <div className={styles.content}>{content}</div>
+    <div className={styles.content}>{props.content}</div>
 
     <div className={styles.footer} />
   </Container>

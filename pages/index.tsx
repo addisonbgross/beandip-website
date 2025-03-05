@@ -8,10 +8,10 @@ import Container from '../components/container/container';
 import NavTabs from '../components/nav-tabs/nav-tabs';
 import Social from '../components/social/social';
 
-import { Tabs } from '../constants.ts';
+import { PostSample, Tabs } from '../types.ts';
 
 const Index = ({ blogs }) => {
-  const [currentTab, setCurrentTab] = useState(Tabs.Blog);
+  const [currentTab, setCurrentTab] = useState<Tabs>(Tabs.Blog);
 
   return (
     <Container>
@@ -28,14 +28,14 @@ const Index = ({ blogs }) => {
         <h1 className="whitespace-nowrap m-1">beandip games</h1>
 
         <div className="flex-1 pl-4">
-          <NavTabs tab={currentTab} onChange={(tab) => setCurrentTab(tab)} />
+          <NavTabs tab={currentTab} onChange={(tab: Tabs) => setCurrentTab(tab)} />
         </div>
 
         <Social />
       </div>
 
       {currentTab === Tabs.Blog &&
-        blogs.map((b) => <BlogSample key={b.page} {...b} />)}
+        blogs.map((blog: PostSample) => <BlogSample key={blog.page} {...blog} />)}
 
       {currentTab === Tabs.About && <About />}
     </Container>

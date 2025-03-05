@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { RedditLink, InstagramLink } from '../../constants.ts';
 
-const Social: React.FC = (): React.ReactElement => (
+const Social = () => (
   <div className="flex space-x-2">
     <Link passHref href={RedditLink} rel="noopener noreferrer" target="_blank">
       <Image

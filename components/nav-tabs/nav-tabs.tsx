@@ -1,23 +1,28 @@
 import clsx from 'clsx';
 
-import { Tabs } from '../../constants.ts';
+import { Tabs } from '../../types';
 import styles from './navTabs.module.css';
 
-const NavTabs: React.FC<{ tab: number, onChange: Function }> = ({ tab, onChange }): React.ReactElement => {
+export interface NavTabsProps {
+  tab: number;
+  onChange: Function;
+} 
+
+const NavTabs = (props: NavTabsProps) => {
   const blogClasses = clsx(styles.navtab, 'link', {
-    [styles.active]: tab === Tabs.Blog,
+    [styles.active]: props.tab === Tabs.Blog,
   });
 
   const aboutClasses = clsx(styles.navtab, 'link', {
-    [styles.active]: tab === Tabs.About,
+    [styles.active]: props.tab === Tabs.About,
   });
 
   return (
     <div className={styles.container}>
-      <div className={blogClasses} onClick={() => onChange(Tabs.Blog)}>
+      <div className={blogClasses} onClick={() => props.onChange(Tabs.Blog)}>
         Blog
       </div>
-      <div className={aboutClasses} onClick={() => onChange(Tabs.About)}>
+      <div className={aboutClasses} onClick={() => props.onChange(Tabs.About)}>
         About
       </div>
     </div>

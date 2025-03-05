@@ -1,33 +1,32 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { ImageBlur } from '../../constants.ts';
+import { ImageBlur } from '../../constants';
+import { PostSample } from '../../types';
 
 import styles from './blogSample.module.css';
 
-const BlogSample: React.FC<{ page: string, thumbnail: string, title: string, date: string, text: string }> = ({
-  page, thumbnail, title, date, text
-}): React.ReactElement => (
-  <Link href={`/blog/${page}`} passHref>
+const BlogSample = (props: PostSample) => (
+  <Link href={`/blog/${props.page}`} passHref>
     <div className={styles.wrapper}>
       <div className={styles.thumbnail}>
         <Image
           className={styles.thumbnail}
-          src={thumbnail}
+          src={props.thumbnail}
           placeholder="blur"
           blurDataURL={ImageBlur}
           width="80"
           height="80"
-          alt={title}
+          alt={props.title}
         />
       </div>
 
       <div className={styles.sample}>
         <div className={styles.header}>
-          <h3 className={styles.title}>{title}</h3>
-          <p className={styles.date}>{date}</p>
+          <h3 className={styles.title}>{props.title}</h3>
+          <p className={styles.date}>{props.date}</p>
         </div>
-        <p className={styles.text}>{text}</p>
+        <p className={styles.text}>{props.text}</p>
       </div>
     </div>
   </Link>

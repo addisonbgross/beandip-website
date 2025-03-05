@@ -4,9 +4,15 @@ import { ImageBlur } from '../../constants.ts';
 
 import styles from './blogImage.module.css';
 
-const BlogImage: React.FC<{ image: string, caption?: string, alt: string, height?: number, width?: number }> = ({
-  image, caption, alt, height = 552, width = 552
-}): React.ReactElement => (
+export interface BlogImageProps {
+  image: string;
+  caption?: string;
+  alt: string;
+  height?: number;
+  width?: number;
+}
+
+const BlogImage = ({ image, caption, alt, height = 552, width = 552 }: BlogImageProps) => (
   <div className={styles.blogImage}>
     <Image
       src={image}
