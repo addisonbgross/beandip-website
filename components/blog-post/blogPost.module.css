@@ -7,14 +7,18 @@
   width: 64px;
   margin-top: 32px;
   margin-bottom: 16px;
+  border-bottom: 2px solid;
+  border-color: transparent;
 }
 .back:hover {
-  border-bottom: solid 2px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
+
+  border-color: black;
 }
 .back:active:hover {
-  border-bottom: solid 5px;
-  margin-bottom: 11px;
+  margin-bottom: 14px;
+  border-width: 4px;
+  border-color: black;
 }
 
 .backArrow {

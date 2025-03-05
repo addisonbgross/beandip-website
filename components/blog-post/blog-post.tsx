@@ -11,7 +11,7 @@ const BlogPost = (props: Post) => (
   <Container>
     <div className={clsx(styles.back, 'link')}>
       <Link href={`/`} className={styles.backArrow}>
-        {'<- back'}
+        {'< back'}
       </Link>
     </div>
 
