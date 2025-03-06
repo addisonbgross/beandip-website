@@ -7,11 +7,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@arcjet/next": "^1.0.0-beta.3",
+    "@arcjet/next": "^1.0.0-beta.2",
     "babel-plugin-styled-components": "^2.0.7",
     "babel-preset-next": "^1.4.0",
     "clsx": "^1.1.1",
-    "next": "^13.4.7",
+    "next": "^15.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-jss": "^10.9.0",
