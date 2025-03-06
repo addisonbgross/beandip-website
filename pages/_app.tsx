@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Analytics } from "@vercel/analytics/react"
 
 import '../styles/styles.css';
 
@@ -9,6 +10,7 @@ const App = ({ Component, pageProps }) => (
       <title>beandip games</title>
     </Head>
     <Component {...pageProps} />
+    <Analytics />
   </>
 );
 
