@@ -134,7 +134,7 @@ export default function BlogPost_BonesAreTheirMoney() {
             image="/images/new-attack-cycle-states.png"
             caption="Updated animation graphs for bow and grenade weapons"
             alt="States depicting the newer draw, ready, attack animations"
-            width={750}
+            width={600}
             height={500}
           />
 
