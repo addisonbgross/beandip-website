@@ -12,7 +12,13 @@ export interface BlogImageProps {
   width?: number;
 }
 
-const BlogImage = ({ image, caption, alt, height = 552, width = 552 }: BlogImageProps) => (
+const BlogImage = ({
+  image,
+  caption,
+  alt,
+  height = 552,
+  width = 552,
+}: BlogImageProps) => (
   <div className={styles.blogImage}>
     <Image
       src={image}
@@ -21,9 +27,12 @@ const BlogImage = ({ image, caption, alt, height = 552, width = 552 }: BlogImage
       placeholder="blur"
       width={width}
       height={height}
-      style={{ margin: '0 auto' }}
+      quality={100}
+      layout="responsive"
+      className="mx-auto"
+      style={{ maxWidth: `${width}px` }}
     />
-    <p style={{ width: '500px' }}>
+    <p className="max-w-[500px]">
       <i>{caption}</i>
     </p>
   </div>

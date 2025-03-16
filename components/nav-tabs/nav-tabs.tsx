@@ -1,32 +1,20 @@
-import clsx from 'clsx';
-
 import { Tabs } from '../../types';
-import styles from './navTabs.module.css';
+import LinkButton from '../link-button/link-button.tsx';
 
 export interface NavTabsProps {
   tab: number;
-  onChange: Function;
-} 
+  latestBlogPostLink: string;
+}
 
-const NavTabs = (props: NavTabsProps) => {
-  const blogClasses = clsx(styles.navtab, 'link', {
-    [styles.active]: props.tab === Tabs.Blog,
-  });
-
-  const aboutClasses = clsx(styles.navtab, 'link', {
-    [styles.active]: props.tab === Tabs.About,
-  });
-
-  return (
-    <div className={styles.container}>
-      <div className={blogClasses} onClick={() => props.onChange(Tabs.Blog)}>
-        Blog
-      </div>
-      <div className={aboutClasses} onClick={() => props.onChange(Tabs.About)}>
-        About
-      </div>
-    </div>
-  );
-};
+const NavTabs = ({ tab, latestBlogPostLink }: NavTabsProps) => (
+  <div className="flex space-x-4 mt-2">
+    <LinkButton
+      text="Blog"
+      link={latestBlogPostLink}
+      isActive={tab === Tabs.Blog}
+    />
+    <LinkButton text="About" link="/about" isActive={tab === Tabs.About} />
+  </div>
+);
 
 export default NavTabs;
