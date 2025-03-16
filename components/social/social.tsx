@@ -4,9 +4,10 @@ import Link from 'next/link';
 import { RedditLink, InstagramLink } from '../../constants.ts';
 
 const Social = () => (
-  <div className="flex space-x-2">
+  <div className="flex space-x-4 w-full">
     <Link passHref href={RedditLink} rel="noopener noreferrer" target="_blank">
       <Image
+        priority
         src="/reddit-logo.svg"
         width="32"
         height="32"
@@ -20,6 +21,7 @@ const Social = () => (
       target="_blank"
     >
       <Image
+        priority
         src="/instagram-logo.svg"
         width="32"
         height="32"
