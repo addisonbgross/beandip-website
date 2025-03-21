@@ -141,15 +141,15 @@ const Home = ({ currentTab = Tabs.Blog, currentPost, currentPage }: any) => {
             )}
           </>
         </div>
-      </div>
 
-      <div className="fixed bottom-0 left-0 w-full bg-white lg:invisible">
-        {currentTab === Tabs.Blog && (
-          <DirectionNav
-            prev={posts[currentPostIndex - 1]?.page}
-            next={posts[currentPostIndex + 1]?.page}
-          />
-        )}
+        <div className="fixed bottom-0 left-0 w-full bg-white lg:invisible">
+          {currentTab === Tabs.Blog && (
+            <DirectionNav
+              prev={posts[currentPostIndex - 1]?.page}
+              next={posts[currentPostIndex + 1]?.page}
+            />
+          )}
+        </div>
       </div>
     </div>
   );
