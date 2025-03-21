@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useMemo } from 'react';
+import React, { useCallback, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 
 import About from '../components/about/about';
@@ -11,6 +11,7 @@ import { Tabs } from '../types.ts';
 import DateNav from '../components/date-nav/date-nav.tsx';
 import { useRouter } from 'next/navigation';
 import DirectionNav from '../components/direction-nav/direction-nav.tsx';
+import BlogIndex from '../components/blog-index/blog-index.tsx';
 
 const posts = [
   {
@@ -83,6 +84,7 @@ const latestBlogPostLink = `/blog/${posts[0].page}`;
 
 const Home = ({ currentTab = Tabs.Blog, currentPost, currentPage }: any) => {
   const router = useRouter();
+  const [isShowingBlogIndex, setIsShowingBlogIndex] = React.useState(false);
 
   // show the latest blog post by default
   useEffect(() => {
@@ -130,9 +132,15 @@ const Home = ({ currentTab = Tabs.Blog, currentPost, currentPage }: any) => {
           </div>
         </div>
 
-        <div className="h-screen overflow-y-auto pr-3 pb-10">
+        <div className="h-screen overflow-y-auto pr-3 pb-20">
           <>
-            {currentTab === Tabs.Blog && currentPost}
+            {currentTab === Tabs.Blog && !isShowingBlogIndex && currentPost}
+            {currentTab === Tabs.Blog && isShowingBlogIndex && (
+              <BlogIndex
+                posts={posts}
+                closeBlogIndex={() => setIsShowingBlogIndex(false)}
+              />
+            )}
             {currentTab === Tabs.About && (
               <div className="lg:w-[800px]">
                 <About />
@@ -143,10 +151,11 @@ const Home = ({ currentTab = Tabs.Blog, currentPost, currentPage }: any) => {
         </div>
 
         <div className="fixed bottom-0 left-0 w-full bg-white lg:invisible">
-          {currentTab === Tabs.Blog && (
+          {currentTab === Tabs.Blog && !isShowingBlogIndex && (
             <DirectionNav
               prev={posts[currentPostIndex - 1]?.page}
               next={posts[currentPostIndex + 1]?.page}
+              onShowBlogIndex={() => setIsShowingBlogIndex(true)}
             />
           )}
         </div>
