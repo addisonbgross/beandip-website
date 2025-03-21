@@ -130,7 +130,7 @@ const Home = ({ currentTab = Tabs.Blog, currentPost, currentPage }: any) => {
           </div>
         </div>
 
-        <div className="h-screen overflow-y-auto pr-3">
+        <div className="h-screen overflow-y-auto pr-3 pb-10">
           <>
             {currentTab === Tabs.Blog && currentPost}
             {currentTab === Tabs.About && (
