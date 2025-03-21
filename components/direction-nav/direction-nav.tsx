@@ -9,11 +9,13 @@ type DirectionNavProps = {
 
 const DirectionNav = ({ prev, next, onShowBlogIndex }: DirectionNavProps) => (
   <div className="flex flex-nowrap justify-between items-center p-4 border-solid border-0 border-t-2 border-gray-300">
-    {prev && (
-      <Link passHref href={prev} className="font-bold mr-auto">
-        Previous
-      </Link>
-    )}
+    <Link
+      passHref
+      href={prev || ''}
+      className={`font-bold mr-auto ${prev ? '' : 'opacity-0'}`}
+    >
+      Previous
+    </Link>
 
     <p
       className="font-bold my-0 cursor-pointer border-0 border-b-2 border-solid border-transparent hover:border-black"
