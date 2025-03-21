@@ -111,7 +111,7 @@ const Home = ({ currentTab = Tabs.Blog, currentPost, currentPage }: any) => {
         )}
       </div>
 
-      <div className="flex flex-col mx-auto lg:mr-auto px-4 pt-4 h-screen">
+      <div className="flex flex-col mx-auto lg:mr-auto px-4 pt-4 max-h-screen">
         <div className="flex flex-wrap lg:justify-between items-center h-12 lg:h-16 mb-4 space-x-2">
           <div className="flex flex-nowrap items-center space-x-2">
             <Image

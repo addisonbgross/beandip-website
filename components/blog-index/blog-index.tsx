@@ -1,6 +1,5 @@
 import { PostLink } from '../../types.ts';
 import Link from 'next/link';
-import { MouseEventHandler, useCallback } from 'react';
 
 type BlogIndexProps = {
   posts: PostLink[];
@@ -8,10 +7,6 @@ type BlogIndexProps = {
 };
 
 const BlogIndex = ({ posts, closeBlogIndex }: BlogIndexProps) => {
-  const handleCloseIndex = useCallback((e, route: string) => {
-    e.preventDefault();
-  }, []);
-
   return (
     <div className="flex flex-col items-center space-y-8">
       {posts.map((post) => (
