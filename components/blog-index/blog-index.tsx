@@ -17,7 +17,7 @@ const BlogIndex = ({ posts, closeBlogIndex }: BlogIndexProps) => {
           <Link
             passHref
             href={`/blog/${post.page}`}
-            className="font-bold text-3xl"
+            className="font-bold text-3xl text-center"
           >
             {post.date}
           </Link>

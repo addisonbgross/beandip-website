@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useCallback, useEffect, useMemo } from 'react';
+import resolveConfig from 'tailwindcss/resolveConfig';
+import React, { useEffect, useMemo } from 'react';
 import Image from 'next/image';
 
 import About from '../components/about/about';
@@ -12,6 +13,7 @@ import DateNav from '../components/date-nav/date-nav.tsx';
 import { useRouter } from 'next/navigation';
 import DirectionNav from '../components/direction-nav/direction-nav.tsx';
 import BlogIndex from '../components/blog-index/blog-index.tsx';
+import tailwindConfig from '../tailwind.config.js';
 
 const posts = [
   {
@@ -84,6 +86,7 @@ const latestBlogPostLink = `/blog/${posts[0].page}`;
 
 const Home = ({ currentTab = Tabs.Blog, currentPost, currentPage }: any) => {
   const router = useRouter();
+  const styleConfig = resolveConfig(tailwindConfig);
   const [isShowingBlogIndex, setIsShowingBlogIndex] = React.useState(false);
 
   // show the latest blog post by default
@@ -93,13 +96,26 @@ const Home = ({ currentTab = Tabs.Blog, currentPost, currentPage }: any) => {
     }
   }, [currentTab, currentPost, router]);
 
+  // prevent the mobile blog post index from showing on large screens
+  useEffect(() => {
+    const handleResize = () => {
+      const lgWidth = parseInt(styleConfig.theme.screens.lg);
+      if (window.innerWidth > lgWidth) {
+        setIsShowingBlogIndex(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [setIsShowingBlogIndex]);
+
   const currentPostIndex = useMemo(
     () => posts.findIndex((post) => post.page === currentPage),
     [currentPage]
   );
 
   return (
-    <div className="lg:grid lg:grid-cols-3">
+    <div className="lg:grid lg:grid-cols-4">
       <div className="lg:block hidden mt-7 max-h-screen space-y-4 ml-auto">
         {currentTab === Tabs.Blog && (
           <div className="flex flex-col">
@@ -111,7 +127,7 @@ const Home = ({ currentTab = Tabs.Blog, currentPost, currentPage }: any) => {
         )}
       </div>
 
-      <div className="flex flex-col mx-auto lg:mr-auto px-4 pt-4 max-h-screen">
+      <div className="flex flex-col mx-auto lg:col-span-2 px-4 pt-4 max-h-screen">
         <div className="flex flex-wrap lg:justify-between items-center h-12 lg:h-16 mb-4 space-x-2">
           <div className="flex flex-nowrap items-center space-x-2">
             <Image
@@ -136,10 +152,12 @@ const Home = ({ currentTab = Tabs.Blog, currentPost, currentPage }: any) => {
           <>
             {currentTab === Tabs.Blog && !isShowingBlogIndex && currentPost}
             {currentTab === Tabs.Blog && isShowingBlogIndex && (
-              <BlogIndex
-                posts={posts}
-                closeBlogIndex={() => setIsShowingBlogIndex(false)}
-              />
+              <div className="lg:hidden block">
+                <BlogIndex
+                  posts={posts}
+                  closeBlogIndex={() => setIsShowingBlogIndex(false)}
+                />
+              </div>
             )}
             {currentTab === Tabs.About && (
               <div className="lg:w-[800px]">
@@ -160,6 +178,8 @@ const Home = ({ currentTab = Tabs.Blog, currentPost, currentPage }: any) => {
           )}
         </div>
       </div>
+
+      <div className="pointer-events-none" />
     </div>
   );
 };

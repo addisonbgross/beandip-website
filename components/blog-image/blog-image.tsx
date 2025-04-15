@@ -28,9 +28,7 @@ const BlogImage = ({
       width={width}
       height={height}
       quality={100}
-      layout="responsive"
-      className="mx-auto"
-      style={{ maxWidth: `${width}px` }}
+      className="mx-auto max-w-[100%] h-auto"
     />
     <p className="max-w-[500px]">
       <i>{caption}</i>
