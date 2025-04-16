@@ -16,8 +16,8 @@ const BlogImage = ({
   image,
   caption,
   alt,
-  height = 552,
-  width = 552,
+  height = 700,
+  width = 700,
 }: BlogImageProps) => (
   <div className={styles.blogImage}>
     <Image

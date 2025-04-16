@@ -127,7 +127,7 @@ const Home = ({ currentTab = Tabs.Blog, currentPost, currentPage }: any) => {
         )}
       </div>
 
-      <div className="flex flex-col mx-auto lg:col-span-2 px-4 pt-4 max-h-screen">
+      <div className="flex flex-col mx-auto lg:col-span-2 w-full px-4 pt-4 max-h-screen">
         <div className="flex flex-wrap lg:justify-between items-center h-12 lg:h-16 mb-4 space-x-2">
           <div className="flex flex-nowrap items-center space-x-2">
             <Image
@@ -148,7 +148,7 @@ const Home = ({ currentTab = Tabs.Blog, currentPost, currentPage }: any) => {
           </div>
         </div>
 
-        <div className="h-screen overflow-y-auto pr-3 pb-20">
+        <div className="h-screen overflow-y-auto pr-4 pb-20">
           <>
             {currentTab === Tabs.Blog && !isShowingBlogIndex && currentPost}
             {currentTab === Tabs.Blog && isShowingBlogIndex && (
