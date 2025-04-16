@@ -160,7 +160,7 @@ const Home = ({ currentTab = Tabs.Blog, currentPost, currentPage }: any) => {
               </div>
             )}
             {currentTab === Tabs.About && (
-              <div className="lg:w-[800px]">
+              <div>
                 <About />
                 <Social />
               </div>
