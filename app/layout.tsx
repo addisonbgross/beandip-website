@@ -1,6 +1,7 @@
 import '../styles/styles.css';
 
 import { ReactNode } from 'react';
+import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const RootLayout = ({ children }: { children: ReactNode }) => (
@@ -48,6 +49,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => (
     </head>
     <body cz-shortcut-listen="true">
       {children}
+      <Analytics />
       <SpeedInsights />
     </body>
   </html>
