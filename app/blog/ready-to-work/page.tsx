@@ -1,15 +1,11 @@
 import BlogPost from '../../../components/blog-post/blog-post';
 import BlogImage from '../../../components/blog-image/blog-image';
-import Home from '../../page.tsx';
-
-const Page = () => (
-  <Home currentPost={<BlogPost_ReadyToWork />} currentPage="ready-to-work" />
-);
 
 const BlogPost_ReadyToWork = () => (
   <BlogPost
     title="Ready To Work"
     date="January 11th, 2023"
+    slug="ready-to-work"
     content={
       <>
         <p>Happy new year!</p>
@@ -36,4 +32,4 @@ const BlogPost_ReadyToWork = () => (
   />
 );
 
-export default Page;
+export default BlogPost_ReadyToWork;

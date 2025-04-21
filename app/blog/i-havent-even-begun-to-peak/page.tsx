@@ -2,21 +2,12 @@ import Link from 'next/link';
 
 import BlogPost from '../../../components/blog-post/blog-post';
 import BlogImage from '../../../components/blog-image/blog-image';
-import Home from '../../page.tsx';
-
-const Page = () => {
-  return (
-    <Home
-      currentPost={<BlogPost_IHaventEvenBegunToPeak />}
-      currentPage="i-havent-even-begun-to-peak"
-    />
-  );
-};
 
 const BlogPost_IHaventEvenBegunToPeak = () => (
   <BlogPost
     title="Let me tell you something. I haven’t even begun to peak"
     date="October 20th, 2022"
+    slug="i-havent-even-begun-to-peak"
     content={
       <>
         <p>
@@ -100,4 +91,4 @@ const BlogPost_IHaventEvenBegunToPeak = () => (
   />
 );
 
-export default Page;
+export default BlogPost_IHaventEvenBegunToPeak;

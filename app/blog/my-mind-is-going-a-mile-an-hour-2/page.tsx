@@ -1,20 +1,11 @@
 import BlogPost from '../../../components/blog-post/blog-post';
 import BlogImage from '../../../components/blog-image/blog-image';
-import Home from '../../page.tsx';
-
-const Page = () => {
-  return (
-    <Home
-      currentPost={<BlogPost_MyMindIsGoingAMileAnHourPart2 />}
-      currentPage="my-mind-is-going-a-mile-an-hour-2"
-    />
-  );
-};
 
 const BlogPost_MyMindIsGoingAMileAnHourPart2 = () => (
   <BlogPost
     title="My Mind Is Going A Mile An Hour (Part 2)"
     date="February 8th, 2023"
+    slug="my-mind-is-going-a-mile-an-hour-2"
     content={
       <>
         <p>
@@ -226,4 +217,4 @@ const BlogPost_MyMindIsGoingAMileAnHourPart2 = () => (
   />
 );
 
-export default Page;
+export default BlogPost_MyMindIsGoingAMileAnHourPart2;

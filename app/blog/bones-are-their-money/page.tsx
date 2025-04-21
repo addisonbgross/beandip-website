@@ -1,20 +1,11 @@
 import BlogPost from '../../../components/blog-post/blog-post';
 import BlogImage from '../../../components/blog-image/blog-image';
-import Home from '../../page.tsx';
-
-const Page = () => {
-  return (
-    <Home
-      currentPost={<BlogPost_BonesAreTheirMoney />}
-      currentPage="bones-are-their-money"
-    />
-  );
-};
 
 const BlogPost_BonesAreTheirMoney = () => (
   <BlogPost
     title="Bones Are Their Money"
     date="September 22nd, 2022"
+    slug="bones-are-their-money"
     content={
       <>
         <p>
@@ -175,4 +166,4 @@ const BlogPost_BonesAreTheirMoney = () => (
   />
 );
 
-export default Page;
+export default BlogPost_BonesAreTheirMoney;

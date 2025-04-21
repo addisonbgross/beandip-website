@@ -1,17 +1,13 @@
-import Home from '../../page.tsx';
 import Link from 'next/link';
 
 import BlogPost from '../../../components/blog-post/blog-post';
 import BlogImage from '../../../components/blog-image/blog-image';
 
-const Page = () => (
-  <Home currentPost={<BlogPost_ImWorried />} currentPage="im-worried" />
-);
-
 const BlogPost_ImWorried = () => (
   <BlogPost
     title="I’m worried the baby thinks people can’t change"
     date="April 19th, 2023"
+    slug="im-worried"
     content={
       <>
         <p>
@@ -259,4 +255,4 @@ const BlogPost_ImWorried = () => (
   />
 );
 
-export default Page;
+export default BlogPost_ImWorried;

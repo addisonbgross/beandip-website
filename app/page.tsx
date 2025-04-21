@@ -84,7 +84,11 @@ const posts = [
 
 const latestBlogPostLink = `/blog/${posts[0].page}`;
 
-const Home = ({ currentTab = Tabs.Blog, currentPost, currentPage }: any) => {
+const HomeWrapper = ({
+  currentTab = Tabs.Blog,
+  currentPost,
+  currentPage,
+}: any) => {
   const router = useRouter();
   const styleConfig = resolveConfig(tailwindConfig);
   const [isShowingBlogIndex, setIsShowingBlogIndex] = React.useState(false);
@@ -107,12 +111,17 @@ const Home = ({ currentTab = Tabs.Blog, currentPost, currentPage }: any) => {
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, [setIsShowingBlogIndex]);
+  }, [setIsShowingBlogIndex, styleConfig.theme.screens.lg]);
 
-  const currentPostIndex = useMemo(
-    () => posts.findIndex((post) => post.page === currentPage),
-    [currentPage]
-  );
+  const { prevPost, nextPost } = useMemo(() => {
+    const currentPostIndex = posts.findIndex(
+      (post) => post.page === currentPage
+    );
+    return {
+      prevPost: posts[currentPostIndex - 1]?.page,
+      nextPost: posts[currentPostIndex + 1]?.page,
+    };
+  }, [currentPage]);
 
   return (
     <div className="lg:grid lg:grid-cols-4">
@@ -171,8 +180,8 @@ const Home = ({ currentTab = Tabs.Blog, currentPost, currentPage }: any) => {
         <div className="fixed bottom-0 left-0 w-full bg-white lg:invisible">
           {currentTab === Tabs.Blog && !isShowingBlogIndex && (
             <DirectionNav
-              prev={posts[currentPostIndex - 1]?.page}
-              next={posts[currentPostIndex + 1]?.page}
+              prev={prevPost}
+              next={nextPost}
               onShowBlogIndex={() => setIsShowingBlogIndex(true)}
             />
           )}
@@ -184,4 +193,4 @@ const Home = ({ currentTab = Tabs.Blog, currentPost, currentPage }: any) => {
   );
 };
 
-export default Home;
+export default HomeWrapper;

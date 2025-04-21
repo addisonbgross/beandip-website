@@ -2,16 +2,12 @@ import Link from 'next/link';
 
 import BlogPost from '../../../components/blog-post/blog-post';
 import BlogImage from '../../../components/blog-image/blog-image';
-import Home from '../../page.tsx';
-
-const Page = () => {
-  return <Home currentPost={<BlogPost_GameOn />} currentPage="game-on" />;
-};
 
 const BlogPost_GameOn = () => (
   <BlogPost
     title="Game On"
     date="September 7th, 2022"
+    slug="game-on"
     content={
       <>
         <p>
@@ -67,4 +63,4 @@ const BlogPost_GameOn = () => (
   />
 );
 
-export default Page;
+export default BlogPost_GameOn;

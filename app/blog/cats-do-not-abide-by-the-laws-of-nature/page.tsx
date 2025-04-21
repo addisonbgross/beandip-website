@@ -1,20 +1,11 @@
 import BlogPost from '../../../components/blog-post/blog-post';
 import BlogImage from '../../../components/blog-image/blog-image';
-import Home from '../../page.tsx';
-
-const Page = () => {
-  return (
-    <Home
-      currentPost={<BlogPost_CatsDoNotAbideByTheLawsOfNature />}
-      currentPage="cats-do-not-abide-by-the-laws-of-nature"
-    />
-  );
-};
 
 const BlogPost_CatsDoNotAbideByTheLawsOfNature = () => (
   <BlogPost
     title="Cats Do Not Abide By The Laws Of Nature"
     date="March 9th, 2023"
+    slug="cats-do-not-abide-by-the-laws-of-nature"
     content={
       <>
         <p>
@@ -159,4 +150,4 @@ const BlogPost_CatsDoNotAbideByTheLawsOfNature = () => (
   />
 );
 
-export default Page;
+export default BlogPost_CatsDoNotAbideByTheLawsOfNature;

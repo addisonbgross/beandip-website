@@ -2,21 +2,12 @@ import Link from 'next/link';
 
 import BlogPost from '../../../components/blog-post/blog-post';
 import BlogImage from '../../../components/blog-image/blog-image';
-import Home from '../../page.tsx';
-
-const Page = () => {
-  return (
-    <Home
-      currentPost={<BlogPost_AiringOfGrievances />}
-      currentPage="airing-of-grievances"
-    />
-  );
-};
 
 const BlogPost_AiringOfGrievances = () => (
   <BlogPost
     title="Airing Of Grievances"
     date="February 23rd, 2023"
+    slug="airing-of-grievances"
     content={
       <>
         <p>
@@ -297,4 +288,4 @@ const BlogPost_AiringOfGrievances = () => (
   />
 );
 
-export default Page;
+export default BlogPost_AiringOfGrievances;

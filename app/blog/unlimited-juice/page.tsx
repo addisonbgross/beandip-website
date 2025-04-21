@@ -1,18 +1,11 @@
 import BlogPost from '../../../components/blog-post/blog-post';
 import BlogImage from '../../../components/blog-image/blog-image';
-import Home from '../../page.tsx';
-
-const Page = () => (
-  <Home
-    currentPost={<BlogPost_UnlimitedJuice />}
-    currentPage="unlimited-juice"
-  />
-);
 
 const BlogPost_UnlimitedJuice = () => (
   <BlogPost
     title="There's unlimited juice? This party is gonna be off the hook"
     date="April 5th, 2023"
+    slug="unlimited-juice"
     content={
       <>
         <p>
@@ -194,4 +187,4 @@ const BlogPost_UnlimitedJuice = () => (
   />
 );
 
-export default Page;
+export default BlogPost_UnlimitedJuice;

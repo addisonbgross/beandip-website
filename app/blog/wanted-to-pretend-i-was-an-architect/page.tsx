@@ -2,19 +2,12 @@ import Link from 'next/link';
 
 import BlogPost from '../../../components/blog-post/blog-post';
 import BlogImage from '../../../components/blog-image/blog-image';
-import Home from '../../page.tsx';
-
-const Page = () => (
-  <Home
-    currentPost={<BlogPost_IAlwaysWantedToPretendIWasAnArchitect />}
-    currentPage="wanted-to-pretend-i-was-an-architect"
-  />
-);
 
 const BlogPost_IAlwaysWantedToPretendIWasAnArchitect = () => (
   <BlogPost
     title="You know I always wanted to pretend I was an architect"
     date="November 2nd, 2022"
+    slug="wanted-to-pretend-i-was-an-architect"
     content={
       <>
         <p>
@@ -279,4 +272,4 @@ const BlogPost_IAlwaysWantedToPretendIWasAnArchitect = () => (
   />
 );
 
-export default Page;
+export default BlogPost_IAlwaysWantedToPretendIWasAnArchitect;

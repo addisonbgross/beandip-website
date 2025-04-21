@@ -1,18 +1,11 @@
 import BlogPost from '../../../components/blog-post/blog-post';
 import BlogImage from '../../../components/blog-image/blog-image';
-import Home from '../../page.tsx';
-
-const Page = () => (
-  <Home
-    currentPost={<BlogPost_SomeoneCouldFitThroughThatWindow />}
-    currentPage="someone-could-fit-through-that-window"
-  />
-);
 
 const BlogPost_SomeoneCouldFitThroughThatWindow = () => (
   <BlogPost
     title="Someone could fit through that window. A small person. An attack child"
     date="May 17th, 2023"
+    slug="someone-could-fit-through-that-window"
     content={
       <>
         <p>
@@ -128,4 +121,4 @@ const BlogPost_SomeoneCouldFitThroughThatWindow = () => (
   />
 );
 
-export default Page;
+export default BlogPost_SomeoneCouldFitThroughThatWindow;

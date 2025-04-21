@@ -1,15 +1,11 @@
 import BlogPost from '../../../components/blog-post/blog-post';
 import BlogImage from '../../../components/blog-image/blog-image';
-import Home from '../../page.tsx';
-
-const Page = () => (
-  <Home currentPost={<BlogPost_JustMowALawn />} currentPage="just-mow-a-lawn" />
-);
 
 const BlogPost_JustMowALawn = () => (
   <BlogPost
     title="Why Would Anyone Do Drugs When They Could Just Mow A Lawn?"
     date="December 1st, 2022"
+    slug="just-mow-a-lawn"
     content={
       <>
         <p>
@@ -160,4 +156,4 @@ const BlogPost_JustMowALawn = () => (
   />
 );
 
-export default Page;
+export default BlogPost_JustMowALawn;

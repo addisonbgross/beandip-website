@@ -1,18 +1,11 @@
 import BlogPost from '../../../components/blog-post/blog-post';
 import BlogImage from '../../../components/blog-image/blog-image';
-import Home from '../../page.tsx';
-
-const Page = () => (
-  <Home
-    currentPost={<BlogPost_OnceYouUnplugTheMachine />}
-    currentPage="once-you-unplug-the-machine"
-  />
-);
 
 const BlogPost_OnceYouUnplugTheMachine = () => (
   <BlogPost
     title="Once You Unplug The Machine, All The Scores Will Be Erased"
     date="October 5th, 2022"
+    slug="once-you-unplug-the-machine"
     content={
       <>
         <p>
@@ -169,4 +162,4 @@ const BlogPost_OnceYouUnplugTheMachine = () => (
   />
 );
 
-export default Page;
+export default BlogPost_OnceYouUnplugTheMachine;
