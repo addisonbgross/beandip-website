@@ -1,6 +1,7 @@
 import '../styles/styles.css';
 
 import { ReactNode } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const RootLayout = ({ children }: { children: ReactNode }) => (
   <html lang="en">
@@ -45,7 +46,10 @@ const RootLayout = ({ children }: { children: ReactNode }) => (
       />
       <meta property="og:url" content="https://www.beandipgames.com" />
     </head>
-    <body cz-shortcut-listen="true">{children}</body>
+    <body cz-shortcut-listen="true">
+      {children}
+      <SpeedInsights />
+    </body>
   </html>
 );
 
