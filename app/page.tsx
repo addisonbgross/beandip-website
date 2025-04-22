@@ -1,10 +1,9 @@
 'use client';
 
 import resolveConfig from 'tailwindcss/resolveConfig';
-import React, { useEffect, useMemo } from 'react';
+import React, { ReactNode, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 
-import About from '../components/about/about';
 import NavTabs from '../components/nav-tabs/nav-tabs';
 import Social from '../components/social/social';
 
@@ -84,21 +83,23 @@ const posts = [
 
 const latestBlogPostLink = `/blog/${posts[0].page}`;
 
-const HomeWrapper = ({
-  currentTab = Tabs.Blog,
-  currentPost,
-  currentPage,
-}: any) => {
+interface HomeWrapperProps {
+  tab: Tabs;
+  content: ReactNode;
+  route: string;
+}
+
+const HomeWrapper = ({ tab = Tabs.Blog, content, route }: HomeWrapperProps) => {
   const router = useRouter();
   const styleConfig = resolveConfig(tailwindConfig);
   const [isShowingBlogIndex, setIsShowingBlogIndex] = React.useState(false);
 
   // show the latest blog post by default
   useEffect(() => {
-    if (!currentPost && currentTab === Tabs.Blog) {
+    if (!content && tab === Tabs.Blog) {
       router.push(latestBlogPostLink);
     }
-  }, [currentTab, currentPost, router]);
+  }, [tab, content, router]);
 
   // prevent the mobile blog post index from showing on large screens
   useEffect(() => {
@@ -113,27 +114,24 @@ const HomeWrapper = ({
     return () => window.removeEventListener('resize', handleResize);
   }, [setIsShowingBlogIndex, styleConfig.theme.screens.lg]);
 
+  // get the previous and next blog post links for the mobile nav
   const { prevPost, nextPost } = useMemo(() => {
-    const currentPostIndex = posts.findIndex(
-      (post) => post.page === currentPage
-    );
+    const currentPostIndex = posts.findIndex((post) => post.page === route);
     return {
       prevPost: posts[currentPostIndex - 1]?.page,
       nextPost: posts[currentPostIndex + 1]?.page,
     };
-  }, [currentPage]);
+  }, [route]);
 
   return (
-    <div className="lg:grid lg:grid-cols-4">
+    <div className="lg:grid lg:grid-cols-4 place-items-start">
       <div className="lg:block hidden mt-7 max-h-screen space-y-4 ml-auto">
-        {currentTab === Tabs.Blog && (
-          <div className="flex flex-col">
-            <div className="ml-5 mb-9">
-              <Social />
-            </div>
-            <DateNav posts={posts} currentRoute={currentPage} />
+        <div className="flex flex-col">
+          <div className="ml-5 mb-9">
+            <Social />
           </div>
-        )}
+          <DateNav posts={posts} currentRoute={route} />
+        </div>
       </div>
 
       <div className="flex flex-col mx-auto lg:col-span-2 w-full px-4 pt-4 max-h-screen">
@@ -153,42 +151,22 @@ const HomeWrapper = ({
           </div>
 
           <div className="flex flex-1 justify-end items-center">
-            <NavTabs tab={currentTab} latestBlogPostLink={latestBlogPostLink} />
+            <NavTabs tab={tab} latestBlogPostLink={latestBlogPostLink} />
           </div>
         </div>
 
         <div className="h-screen overflow-y-auto pr-4 pb-20">
-          <>
-            {currentTab === Tabs.Blog && !isShowingBlogIndex && currentPost}
-            {currentTab === Tabs.Blog && isShowingBlogIndex && (
-              <div className="lg:hidden block">
-                <BlogIndex
-                  posts={posts}
-                  closeBlogIndex={() => setIsShowingBlogIndex(false)}
-                />
-              </div>
-            )}
-            {currentTab === Tabs.About && (
-              <div>
-                <About />
-                <Social />
-              </div>
-            )}
-          </>
+          {isShowingBlogIndex ? <BlogIndex posts={posts} /> : content}
         </div>
 
-        <div className="fixed bottom-0 left-0 w-full bg-white lg:invisible">
-          {currentTab === Tabs.Blog && !isShowingBlogIndex && (
-            <DirectionNav
-              prev={prevPost}
-              next={nextPost}
-              onShowBlogIndex={() => setIsShowingBlogIndex(true)}
-            />
-          )}
-        </div>
+        {tab === Tabs.Blog && !isShowingBlogIndex && (
+          <DirectionNav
+            prev={prevPost}
+            next={nextPost}
+            onShowBlogIndex={() => setIsShowingBlogIndex(true)}
+          />
+        )}
       </div>
-
-      <div className="pointer-events-none" />
     </div>
   );
 };

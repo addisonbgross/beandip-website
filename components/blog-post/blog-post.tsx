@@ -1,10 +1,11 @@
-import { Post } from '../../types';
+import { Post, Tabs } from '../../types';
 import HomeWrapper from '../../app/page.tsx';
 
 const BlogPost = ({ title, date, slug, content }: Post) => (
   <HomeWrapper
-    currentPage={slug}
-    currentPost={
+    tab={Tabs.Blog}
+    route={slug}
+    content={
       <main className="block px-0">
         <h2>{title}</h2>
         <p className="italic my-0">{date}</p>
