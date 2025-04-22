@@ -16,6 +16,10 @@ import tailwindConfig from '../tailwind.config.js';
 
 const posts = [
   {
+    page: 'still-alive',
+    date: 'April 22nd, 2025',
+  },
+  {
     page: 'someone-could-fit-through-that-window',
     date: 'May 17th, 2023',
   },
