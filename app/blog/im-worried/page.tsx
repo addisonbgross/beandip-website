@@ -5,7 +5,7 @@ import BlogImage from '../../../components/blog-image/blog-image';
 
 const BlogPost_ImWorried = () => (
   <BlogPost
-    title="I’m worried the baby thinks people can’t change"
+    title="I’m Worried The Baby Thinks People Can’t Change"
     date="April 19th, 2023"
     slug="im-worried"
     content={

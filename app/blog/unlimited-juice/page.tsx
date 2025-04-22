@@ -3,7 +3,7 @@ import BlogImage from '../../../components/blog-image/blog-image';
 
 const BlogPost_UnlimitedJuice = () => (
   <BlogPost
-    title="There's unlimited juice? This party is gonna be off the hook"
+    title="There's Unlimited Juice? This Party Is Gonna Be Off The Hook"
     date="April 5th, 2023"
     slug="unlimited-juice"
     content={

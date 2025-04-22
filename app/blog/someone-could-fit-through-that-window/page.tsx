@@ -3,7 +3,7 @@ import BlogImage from '../../../components/blog-image/blog-image';
 
 const BlogPost_SomeoneCouldFitThroughThatWindow = () => (
   <BlogPost
-    title="Someone could fit through that window. A small person. An attack child"
+    title="Someone Could Fit Through That Window. A Small Person. An Attack Child"
     date="May 17th, 2023"
     slug="someone-could-fit-through-that-window"
     content={

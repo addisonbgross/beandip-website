@@ -5,7 +5,7 @@ import BlogImage from '../../../components/blog-image/blog-image';
 
 const BlogPost_IHaventEvenBegunToPeak = () => (
   <BlogPost
-    title="Let me tell you something. I haven’t even begun to peak"
+    title="Let Me Tell You Something. I Haven’t Even Begun To Peak"
     date="October 20th, 2022"
     slug="i-havent-even-begun-to-peak"
     content={

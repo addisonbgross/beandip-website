@@ -5,7 +5,7 @@ import BlogImage from '../../../components/blog-image/blog-image';
 
 const BlogPost_IAlwaysWantedToPretendIWasAnArchitect = () => (
   <BlogPost
-    title="You know I always wanted to pretend I was an architect"
+    title="You Know I Always Wanted To Pretend I Was An Architect"
     date="November 2nd, 2022"
     slug="wanted-to-pretend-i-was-an-architect"
     content={

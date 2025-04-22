@@ -2,7 +2,7 @@ import BlogPost from '../../../components/blog-post/blog-post';
 
 const BlogPost_StillAlive = () => (
   <BlogPost
-    title="Still alive"
+    title="Still Alive"
     date="April 22nd, 2025"
     slug="still-alive"
     content={

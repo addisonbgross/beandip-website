@@ -5,7 +5,7 @@ import BlogImage from '../../../components/blog-image/blog-image';
 
 const BlogPost_WhatAreYouDoing = () => (
   <BlogPost
-    title="What are you doing? Levels"
+    title="What Are You Doing? Levels"
     date="November 16th, 2022"
     slug="what-are-you-doing"
     content={
