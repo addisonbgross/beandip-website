@@ -160,7 +160,15 @@ const HomeWrapper = ({ tab = Tabs.Blog, content, route }: HomeWrapperProps) => {
         </div>
 
         <div className="h-screen overflow-y-auto pr-4 pb-20">
-          {isShowingBlogIndex ? <BlogIndex posts={posts} /> : content}
+          {isShowingBlogIndex ? (
+            <BlogIndex
+              posts={posts}
+              currentRoute={route}
+              onClose={() => setIsShowingBlogIndex(false)}
+            />
+          ) : (
+            content
+          )}
         </div>
 
         {tab === Tabs.Blog && !isShowingBlogIndex && (
