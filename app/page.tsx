@@ -129,7 +129,7 @@ const HomeWrapper = ({ tab = Tabs.Blog, content, route }: HomeWrapperProps) => {
 
   return (
     <div className="lg:grid lg:grid-cols-4 place-items-start">
-      <div className="lg:block hidden mt-7 max-h-screen space-y-4 ml-auto">
+      <div className="lg:block hidden mt-7 max-h-dvh space-y-4 ml-auto">
         <div className="flex flex-col">
           <div className="ml-5 mb-9">
             <Social />
@@ -138,7 +138,7 @@ const HomeWrapper = ({ tab = Tabs.Blog, content, route }: HomeWrapperProps) => {
         </div>
       </div>
 
-      <div className="flex flex-col mx-auto lg:col-span-2 w-full px-4 pt-4 max-h-screen">
+      <div className="flex flex-col mx-auto lg:col-span-2 w-full px-4 pt-4 max-h-dvh">
         <div className="flex flex-wrap lg:justify-between items-center h-12 lg:h-16 mb-4 space-x-2">
           <div className="flex flex-nowrap items-center space-x-2">
             <Image
