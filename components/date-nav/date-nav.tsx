@@ -14,14 +14,14 @@ const DateNav = ({ posts, currentRoute }: DateNavProps) => (
         key={`post-link-${post.date}`}
       >
         {post.page == currentRoute ? (
-          <span className="mr-1.5 text-md text-beandip-pink">⮞</span>
+          <span className="mr-2 text-sm text-beandip-pink">⮞</span>
         ) : (
           <div className="mr-5" />
         )}
         <Link
           passHref
           href={`/blog/${post.page}`}
-          className={`w-max ${post.page == currentRoute && 'font-bold'}`}
+          className={`w-max ${post.page == currentRoute && 'active-link'}`}
         >
           {post.date}
         </Link>

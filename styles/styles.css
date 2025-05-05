@@ -6,22 +6,46 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Be Vietnam Pro', Ubuntu, sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   overflow-x: hidden;
+  background-color: var(--bg);
+
+  --text: #101010;
+  --bg: #F0F0F0;
+  --svg-invert: 0%;
+
+  @media (prefers-color-scheme: dark) {
+    --text: #F0F0F0;
+    --bg: #101010;
+    --svg-invert: 100%;
+  }
 }
 
 a {
-  color: inherit;
+  color: var(--text);
   font-weight: 500;
   text-decoration: none;
-  border-bottom: solid 2px transparent;
+  cursor: pointer;
+  position: relative;
 }
-a:hover {
-  border-bottom: solid 2px black;
+a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: var(--text);
+  transition: width .2s;
+}
+a:hover:after {
+  width: 100%;
 }
 
 p,
-li {
+li,
+blockquote {
+  color: var(--text);
   font-weight: 300;
   line-height: 1.6rem;
 }
@@ -32,7 +56,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Sora';
+  color: var(--text);
+  font-family: 'Sora', serif;
 }
 
 h1 {
@@ -48,15 +73,10 @@ h3 {
   margin: 16px 0;
   font-size: 16px;
   font-weight: 600;
-
-  /* the only way to get rid of the black underline for some reason */
-  text-decoration-color: white;
-  text-decoration-line: underline;
 }
 
 h4 {
-  margin: 0;
-  margin-top: 16px;
+  margin: 16px 0 0;
 }
 
 strong {
@@ -81,18 +101,20 @@ svg path {
   font-style: italic;
 }
 
-.link {
-  margin-bottom: 6px;
-  cursor: pointer;
+.social {
+  filter: invert(var(--svg-invert));
 }
-.link:hover {
-  border-bottom: solid 2px;
-  margin-bottom: 4px;
+
+.direction-nav {
+  background-color: var(--bg);
 }
-.link:active {
-  border-bottom: solid 3px;
-  margin-bottom: 2px;
-}
-.link:active:hover {
-  border-bottom: solid 5px;
+
+.active-link:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 2px;
+  background: var(--text);
 }

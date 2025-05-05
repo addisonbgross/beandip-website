@@ -22,3 +22,8 @@ export enum Tabs {
   Blog,
   About,
 }
+
+export enum Theme {
+  Light,
+  Dark,
+}

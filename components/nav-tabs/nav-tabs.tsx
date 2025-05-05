@@ -1,5 +1,5 @@
-import { Tabs } from '../../types';
-import LinkButton from '../link-button/link-button.tsx';
+import Link from 'next/link';
+import { Tabs } from '../../types.ts';
 
 export interface NavTabsProps {
   tab: number;
@@ -7,13 +7,21 @@ export interface NavTabsProps {
 }
 
 const NavTabs = ({ tab, latestBlogPostLink }: NavTabsProps) => (
-  <div className="flex space-x-4 mt-2">
-    <LinkButton
-      text="Blog"
-      link={latestBlogPostLink}
-      isActive={tab === Tabs.Blog}
-    />
-    <LinkButton text="About" link="/about" isActive={tab === Tabs.About} />
+  <div className="flex space-x-4 mt-1">
+    <Link
+      passHref
+      href={latestBlogPostLink}
+      className={tab === Tabs.Blog ? 'active-link' : ''}
+    >
+      {'Blog'}
+    </Link>
+    <Link
+      passHref
+      href={'/about'}
+      className={tab === Tabs.About ? 'active-link' : ''}
+    >
+      {'About'}
+    </Link>
   </div>
 );
 

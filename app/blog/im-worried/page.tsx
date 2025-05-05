@@ -149,6 +149,7 @@ const BlogPost_ImWorried = () => (
           beginning. We{' '}
           <Link
             href="https://www.beandipgames.com/blog/airing-of-grievances"
+            className="inline-block"
             passHref
           >
             wrote a post
