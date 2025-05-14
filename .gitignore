@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+# JUnit output
+report.xml
+
 # production
 /build
 

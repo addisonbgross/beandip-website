@@ -8,6 +8,16 @@ const createJestConfig = nextJest({
 const config: Config = {
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
+  reporters: [
+    [
+      'jest-junit',
+      {
+        outputDirectory: './',
+        outputName: 'report.xml',
+        addFileAttribute: 'true',
+      },
+    ],
+  ],
 };
 
 export default createJestConfig(config);

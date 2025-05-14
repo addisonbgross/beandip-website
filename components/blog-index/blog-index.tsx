@@ -1,3 +1,4 @@
+import React from 'react';
 import { PostLink } from '../../types.ts';
 import Link from 'next/link';
 
